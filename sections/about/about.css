@@ -17,10 +17,52 @@
     color: var(--text-light);
 }
 
-.skills h3 {
+.skills h3,
+.certifications h3 {
     font-size: 1.5rem;
-    margin: 2rem 0 1rem;
+    margin: 2.5rem 0 1.5rem;
     color: var(--text-color);
+    font-weight: 600;
+}
+
+.certifications {
+    margin-top: 2rem;
+}
+
+.cert-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--background-white);
+    border: 2px solid var(--border-light);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.cert-item:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.cert-item i {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    min-width: 20px;
+}
+
+.cert-item span {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.95rem;
 }
 
 .skill-tags {
@@ -74,9 +116,40 @@
 }
 
 .profile-subtitle {
-    color: var(--primary-color) !important;
-    font-style: italic;
-    font-size: 0.85rem !important;
+    color: var(--secondary-color) !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.profile-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: 0.25rem;
+    font-weight: 500;
 }
 
 /* Responsive Design for About */

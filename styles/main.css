@@ -1,15 +1,21 @@
 /* Global CSS Variables */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #fbbf24;
-    --text-color: #1f2937;
-    --text-light: #6b7280;
+    --primary-color: #0f172a;
+    --secondary-color: #3b82f6;
+    --accent-color: #10b981;
+    --text-color: #1e293b;
+    --text-light: #64748b;
+    --text-muted: #94a3b8;
     --background-light: #f8fafc;
+    --background-dark: #0f172a;
     --background-white: #ffffff;
-    --border-color: #e5e7eb;
-    --shadow-light: rgba(0, 0, 0, 0.08);
-    --shadow-medium: rgba(0, 0, 0, 0.15);
-    --shadow-heavy: rgba(0, 0, 0, 0.1);
+    --border-color: #e2e8f0;
+    --border-light: #f1f5f9;
+    --shadow-light: rgba(15, 23, 42, 0.05);
+    --shadow-medium: rgba(15, 23, 42, 0.1);
+    --shadow-heavy: rgba(15, 23, 42, 0.15);
+    --gradient-primary: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    --gradient-secondary: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
 }
 
 /* Reset and Base Styles */
@@ -24,10 +30,13 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
     color: var(--text-color);
     overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.011em;
 }
 
 .container {
@@ -39,11 +48,41 @@ body {
 /* Section Titles */
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     color: var(--text-color);
+    letter-spacing: -0.025em;
+    position: relative;
 }
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-secondary);
+    border-radius: 2px;
+}
+
+/* Professional Typography Classes */
+.text-lg { font-size: 1.125rem; line-height: 1.75; }
+.text-xl { font-size: 1.25rem; line-height: 1.75; }
+.text-2xl { font-size: 1.5rem; line-height: 1.6; }
+.text-3xl { font-size: 1.875rem; line-height: 1.5; }
+.text-4xl { font-size: 2.25rem; line-height: 1.4; }
+
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.leading-tight { line-height: 1.25; }
+.leading-snug { line-height: 1.375; }
+.leading-normal { line-height: 1.5; }
+.leading-relaxed { line-height: 1.625; }
 
 /* Animations */
 @keyframes fadeInUp {
