@@ -124,6 +124,18 @@
     font-weight: 500;
 }
 
+.portfolio-actions {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.portfolio-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
 /* Responsive Design for Portfolio */
 @media (max-width: 768px) {
     .portfolio-grid {
