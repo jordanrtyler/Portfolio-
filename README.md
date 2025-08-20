@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Digital Marketing Portfolio
 
 A modern, responsive, and professional portfolio website designed specifically for digital marketing professionals. This portfolio showcases your skills, services, and projects with a clean, engaging design that converts visitors into clients.
@@ -195,3 +196,7 @@ This portfolio template is free to use and modify for personal and commercial pr
 **Built with ❤️ for Digital Marketing Professionals**
 
 *Transform your online presence and showcase your digital marketing expertise with this professional portfolio template.*
+=======
+# Portfolio-
+Jordans super cool portfolio 
+>>>>>>> 4fb31d2c73037412a7d919c443b7031471e283a2
