@@ -32,7 +32,9 @@ const filesToCopy = [
   'script.js',
   'styles.css',
   'README.md',
-  'LICENSE'
+  'LICENSE',
+  'favicon.svg',
+  'favicon.html'
 ];
 
 const dirsToCopy = [
