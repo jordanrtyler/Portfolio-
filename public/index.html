@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Tyler - Digital Marketing Specialist</title>
+    <meta name="description" content="Jordan Tyler - Digital Marketing Specialist. Explore my recent works and connect with me to discuss exciting projects.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="sections/home/home.css">
+    <link rel="stylesheet" href="sections/about/about.css">
+    <link rel="stylesheet" href="sections/services/services.css">
+    <link rel="stylesheet" href="sections/portfolio/portfolio.css">
+    <link rel="stylesheet" href="sections/contact/contact.css">
+    <link rel="stylesheet" href="sections/footer/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Case Studies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Include Home Section -->
+    <div id="home-section"></div>
+
+    <!-- Include About Section -->
+    <div id="about-section"></div>
+
+    <!-- Include Services Section -->
+    <div id="services-section"></div>
+
+    <!-- Include Portfolio Section -->
+    <div id="portfolio-section"></div>
+
+    <!-- Include Contact Section -->
+    <div id="contact-section"></div>
+
+    <!-- Include Footer Section -->
+    <div id="footer-section"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load sections dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load Home Section
+            fetch('sections/home/home.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('home-section').innerHTML = data;
+                });
+
+            // Load About Section
+            fetch('sections/about/about.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('about-section').innerHTML = data;
+                });
+
+            // Load Services Section
+            fetch('sections/services/services.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('services-section').innerHTML = data;
+                });
+
+            // Load Portfolio Section
+            fetch('sections/portfolio/portfolio.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('portfolio-section').innerHTML = data;
+                });
+
+            // Load Contact Section
+            fetch('sections/contact/contact.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('contact-section').innerHTML = data;
+                });
+
+            // Load Footer Section
+            fetch('sections/footer/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-section').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>

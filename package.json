@@ -6,8 +6,9 @@
   "scripts": {
     "start": "npx serve .",
     "dev": "npx live-server --port=3000",
-    "build": "echo 'No build step required - static HTML/CSS/JS'",
-    "deploy": "echo 'Deploy to your preferred hosting service'"
+    "build": "node build.js",
+    "vercel-build": "node build.js",
+    "deploy": "vercel --prod"
   },
   "keywords": [
     "portfolio",
