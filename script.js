@@ -297,4 +297,31 @@ document.addEventListener('DOMContentLoaded', () => {
     if (statsSection) {
         statsObserver.observe(statsSection);
     }
+    
+    // Initialize gallery tabs
+    initializeGalleryTabs();
+});
+
+// Gallery tab functionality
+function initializeGalleryTabs() {
+    const tabs = document.querySelectorAll('.gallery-tab');
+    const galleryContents = document.querySelectorAll('.gallery-content');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.getAttribute('data-tab');
+            
+            // Remove active class from all tabs and contents
+            tabs.forEach(t => t.classList.remove('active'));
+            galleryContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding content
+            tab.classList.add('active');
+            const targetContent = document.getElementById(`${targetTab}-gallery`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+}
 });
