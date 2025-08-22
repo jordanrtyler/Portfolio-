@@ -173,6 +173,19 @@
     margin: 0;
 }
 
+/* Gallery Image Styles */
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+}
+
 .gallery-caption {
     padding: 1.5rem;
 }

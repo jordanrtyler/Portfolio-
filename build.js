@@ -40,7 +40,8 @@ const filesToCopy = [
 const dirsToCopy = [
   'styles',
   'sections',
-  'case-studies'
+  'case-studies',
+  'images'
 ];
 
 console.log('🚀 Building for Vercel deployment...');
