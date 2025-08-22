@@ -177,24 +177,23 @@
 .gallery-image {
     width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 350px;
     object-fit: contain;
     border-bottom: 1px solid var(--border-color);
     transition: transform 0.3s ease;
     display: block;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .gallery-item:hover .gallery-image {
     transform: scale(1.02);
 }
 
-/* Ensure image quality */
-.gallery-image {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
 
 .gallery-caption {
     padding: 1.5rem;
