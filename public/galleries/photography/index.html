@@ -4,202 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Portfolio - Jordan Tyler</title>
-    <meta name="description" content="Professional photography portfolio showcasing nature, portrait, documentary, and abstract photography work.">
+    <meta name="description" content="Explore Jordan Tyler's photography portfolio featuring nature, portrait, and storytelling photography.">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/navigation.css">
     <link rel="stylesheet" href="../../styles/components.css">
     <link rel="stylesheet" href="gallery.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>JT</h2>
+                <a href="../../">JT</a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../../index.html" class="nav-link">← Back to Portfolio</a>
+                    <a href="../../" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../#portfolio" class="nav-link">Recent Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
-    <!-- Gallery Header -->
+    <!-- Header -->
     <header class="gallery-header">
         <div class="container">
-            <h1 class="gallery-title">Photography Portfolio</h1>
-            <p class="gallery-subtitle">Capturing moments, stories, and beauty through the lens</p>
+            <h1>Photography Portfolio</h1>
+            <p>Capturing moments, emotions, and stories through the lens</p>
             <div class="gallery-stats">
-                <div class="stat-item">
-                    <span class="stat-number">6+</span>
-                    <span class="stat-label">Years Experience</span>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Images</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">100+</span>
-                    <span class="stat-label">Projects Completed</span>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Categories</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">Specialties</span>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Quality</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Gallery Categories -->
-    <section class="gallery-categories">
+    <!-- Category Tabs -->
+    <div class="category-tabs">
         <div class="container">
-            <div class="category-tabs">
-                <button class="category-tab active" data-category="all">All Work</button>
-                <button class="category-tab" data-category="nature">Nature</button>
-                <button class="category-tab" data-category="portrait">Portrait</button>
-                <button class="category-tab" data-category="documentary">Documentary</button>
-                <button class="category-tab" data-category="abstract">Abstract</button>
-            </div>
+            <button class="category-tab active" data-category="all">All Photos</button>
+            <button class="category-tab" data-category="nature">Nature</button>
+            <button class="category-tab" data-category="portrait">Portrait</button>
+            <button class="category-tab" data-category="storytelling">Storytelling</button>
         </div>
-    </section>
+    </div>
 
-    <!-- Main Gallery Grid -->
+    <!-- Main Gallery -->
     <main class="gallery-main">
         <div class="container">
             <div class="gallery-grid" id="gallery-grid">
-                <!-- Nature Photography -->
+                <!-- Nature Category -->
                 <div class="gallery-item" data-category="nature">
                     <div class="gallery-image-container">
-                        <img src="../../images/photography/Hayden Creek-3.jpg" alt="Hayden Creek Nature Photography" class="gallery-image">
+                        <img src="../../images/photography/nature/Hayden Creek-3.jpg" alt="Hayden Creek Nature Photography" class="gallery-image">
                         <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Hayden Creek-3.jpg', 'Hayden Creek Nature Photography')">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/Hayden Creek-3.jpg', 'Hayden Creek Nature Photography')">
                                 <i class="fas fa-expand"></i>
                             </button>
                         </div>
                     </div>
                     <div class="gallery-info">
                         <h3>Hayden Creek</h3>
-                        <p>Nature Photography</p>
+                        <p>Serene natural landscape</p>
                         <div class="gallery-tags">
-                            <span>Landscape</span>
                             <span>Nature</span>
-                            <span>Outdoors</span>
+                            <span>Landscape</span>
+                            <span>Water</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Portrait Photography -->
-                <div class="gallery-item" data-category="portrait">
-                    <div class="gallery-image-container">
-                        <img src="../../images/photography/IMG_7204.jpeg" alt="Portrait Photography" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/IMG_7204.jpeg', 'Portrait Photography')">
-                                <i class="fas fa-expand"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Professional Portrait</h3>
-                        <p>Portrait Photography</p>
-                        <div class="gallery-tags">
-                            <span>Portrait</span>
-                            <span>Professional</span>
-                            <span>Studio</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Documentary Photography -->
-                <div class="gallery-item" data-category="documentary">
-                    <div class="gallery-image-container">
-                        <img src="../../images/photography/IMG_2330.jpeg" alt="Additional Photography Work" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/IMG_2330.jpeg', 'Additional Photography Work')">
-                                <i class="fas fa-expand"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Additional Photography</h3>
-                        <p>More Photography Work</p>
-                        <div class="gallery-tags">
-                            <span>Photography</span>
-                            <span>Additional</span>
-                            <span>Work</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Abstract Photography -->
-                <div class="gallery-item" data-category="abstract">
-                    <div class="gallery-image-container">
-                        <img src="../../images/photography/Pieces of a Puzzle.jpg" alt="Abstract Photography" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Pieces of a Puzzle.jpg', 'Abstract Photography')">
-                                <i class="fas fa-expand"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Pieces of a Puzzle</h3>
-                        <p>Abstract Photography</p>
-                        <div class="gallery-tags">
-                            <span>Abstract</span>
-                            <span>Creative</span>
-                            <span>Artistic</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Nature Work -->
                 <div class="gallery-item" data-category="nature">
                     <div class="gallery-image-container">
-                        <img src="../../images/photography/IMG_2330.jpeg" alt="Additional Nature Photography" class="gallery-image">
+                        <img src="../../images/photography/nature/Texture.jpeg" alt="Natural Texture Photography" class="gallery-image">
                         <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/IMG_2330.jpeg', 'Additional Nature Photography')">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/Texture.jpeg', 'Natural Texture Photography')">
                                 <i class="fas fa-expand"></i>
                             </button>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3>Natural Beauty</h3>
-                        <p>Nature Photography</p>
+                        <h3>Natural Texture</h3>
+                        <p>Detailed natural patterns</p>
                         <div class="gallery-tags">
                             <span>Nature</span>
-                            <span>Landscape</span>
-                            <span>Beauty</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Texture Photography -->
-                <div class="gallery-item" data-category="abstract">
-                    <div class="gallery-image-container">
-                        <img src="../../images/photography/Texture.jpeg" alt="Texture Photography" class="gallery-image">
-                        <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Texture.jpeg', 'Texture Photography')">
-                                <i class="fas fa-expand"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h3>Texture Study</h3>
-                        <p>Abstract Photography</p>
-                        <div class="gallery-tags">
                             <span>Texture</span>
-                            <span>Abstract</span>
                             <span>Detail</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Additional Photography Work -->
                 <div class="gallery-item" data-category="nature">
                     <div class="gallery-image-container">
-                        <img src="../../images/photography/cbfd94_232cfc33e1004a989e5e89eb14bfa628~mv2.jpg.avif" alt="Nature Photography" class="gallery-image">
+                        <img src="../../images/photography/nature/cbfd94_232cfc33e1004a989e5e89eb14bfa628~mv2.jpg.avif" alt="Nature Photography" class="gallery-image">
                         <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/cbfd94_232cfc33e1004a989e5e89eb14bfa628~mv2.jpg.avif', 'Nature Photography')">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_232cfc33e1004a989e5e89eb14bfa628~mv2.jpg.avif', 'Nature Photography')">
                                 <i class="fas fa-expand"></i>
                             </button>
                         </div>
@@ -215,86 +140,267 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" data-category="portrait">
+                <div class="gallery-item" data-category="nature">
                     <div class="gallery-image-container">
-                        <img src="../../images/photography/cbfd94_31661f0a2fad4bc7b55e4190910d4f82~mv2.jpg.avif" alt="Portrait Work" class="gallery-image">
+                        <img src="../../images/photography/nature/cbfd94_31661f0a2fad4bc7b55e4190910d4f82~mv2.jpg.avif" alt="Nature Photography" class="gallery-image">
                         <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/cbfd94_31661f0a2fad4bc7b55e4190910d4f82~mv2.jpg.avif', 'Portrait Work')">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_31661f0a2fad4bc7b55e4190910d4f82~mv2.jpg.avif', 'Nature Photography')">
                                 <i class="fas fa-expand"></i>
                             </button>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3>Portrait Work</h3>
-                        <p>Professional portrait photography</p>
+                        <h3>Nature Photography</h3>
+                        <p>Beautiful natural scenes</p>
                         <div class="gallery-tags">
-                            <span>Portrait</span>
-                            <span>Professional</span>
-                            <span>People</span>
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Outdoors</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="gallery-item" data-category="abstract">
+                <div class="gallery-item" data-category="nature">
                     <div class="gallery-image-container">
-                        <img src="../../images/photography/cbfd94_4240dea736d24f09bb84efcb475ce2f1~mv2.jpg.avif" alt="Abstract Photography" class="gallery-image">
+                        <img src="../../images/photography/nature/cbfd94_4240dea736d24f09bb84efcb475ce2f1~mv2.jpg.avif" alt="Nature Photography" class="gallery-image">
                         <div class="gallery-overlay">
-                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/cbfd94_4240dea736d24f09bb84efcb475ce2f1~mv2.jpg.avif', 'Abstract Photography')">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_4240dea736d24f09bb84efcb475ce2f1~mv2.jpg.avif', 'Nature Photography')">
                                 <i class="fas fa-expand"></i>
                             </button>
                         </div>
                     </div>
                     <div class="gallery-info">
-                        <h3>Abstract Photography</h3>
-                        <p>Creative and artistic imagery</p>
+                        <h3>Nature Photography</h3>
+                        <p>Beautiful natural scenes</p>
                         <div class="gallery-tags">
-                            <span>Abstract</span>
-                            <span>Creative</span>
-                            <span>Artistic</span>
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Outdoors</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- Portrait Category -->
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/IMG_7204.jpeg" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/IMG_7204.jpeg', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/IMG_2330.jpeg" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/IMG_2330.jpeg', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/cbfd94_22206da4fb0846b89242d61445d5d8ba~mv2.jpg.avif" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/cbfd94_22206da4fb0846b89242d61445d5d8ba~mv2.jpg.avif', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/cbfd94_22779b29389140c7921aa589a402a03b~mv2.jpg.avif" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/cbfd94_22779b29389140c7921aa589a402a03b~mv2.jpg.avif', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/cbfd94_2d656f8349fe4dd7953125bfeccb95d4~mv2.jpeg.avif" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/cbfd94_2d656f8349fe4dd7953125bfeccb95d4~mv2.jpeg.avif', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storytelling Category -->
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/storytelling/Pieces of a Puzzle.jpg" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/storytelling/Pieces of a Puzzle.jpg', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Pieces of a Puzzle</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/storytelling/cbfd94_ce9e0d49107744eeb63d0797bb275776~mv2.jpg.avif" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/storytelling/cbfd94_ce9e0d49107744eeb63d0797bb275776~mv2.jpg.avif', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Storytelling Photography</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/storytelling/cbfd94_77c1d965ebbd41e4a5d0553b76a7cf9e~mv2.jpg.avif" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/storytelling/cbfd94_77c1d965ebbd41e4a5d0553b76a7cf9e~mv2.jpg.avif', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Storytelling Photography</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/storytelling/cbfd94_cbb18b1c2b79490cb04d493eb60a307d~mv2.jpg.avif" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/storytelling/cbfd94_cbb18b1c2b79490cb04d493eb60a307d~mv2.jpg.avif', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Storytelling Photography</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/storytelling/cbfd94_d676f067bdc949a9870569b502699bb8~mv2.jpg.avif" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/storytelling/cbfd94_d676f067bdc949a9870569b502699bb8~mv2.jpg.avif', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Storytelling Photography</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more images from each category as needed -->
             </div>
         </div>
     </main>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <div class="lightbox-content">
-            <span class="close-lightbox">&times;</span>
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
             <img id="lightbox-image" src="" alt="">
-            <div class="lightbox-caption">
-                <h3 id="lightbox-title"></h3>
-            </div>
+            <div id="lightbox-caption"></div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="gallery-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Jordan Tyler</h3>
-                    <p>Professional Photographer & Digital Marketer</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="../../index.html#services">Portfolio</a></li>
-                        <li><a href="../../index.html#about">About</a></li>
-                        <li><a href="../../index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Jordan Tyler. All rights reserved.</p>
-            </div>
+            <p>&copy; 2025 Jordan Tyler. All rights reserved.</p>
+            <a href="../../" class="back-home">← Back to Portfolio</a>
         </div>
     </footer>
 
