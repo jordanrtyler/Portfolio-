@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio - Jordan Tyler</title>
+    <meta name="description" content="Professional photography portfolio showcasing nature, portrait, documentary, and abstract photography work.">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/navigation.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">← Back to Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <header class="gallery-header">
+        <div class="container">
+            <h1 class="gallery-title">Photography Portfolio</h1>
+            <p class="gallery-subtitle">Capturing moments, stories, and beauty through the lens</p>
+            <div class="gallery-stats">
+                <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Specialties</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Work</button>
+                <button class="category-tab" data-category="nature">Nature</button>
+                <button class="category-tab" data-category="portrait">Portrait</button>
+                <button class="category-tab" data-category="documentary">Documentary</button>
+                <button class="category-tab" data-category="abstract">Abstract</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Grid -->
+    <main class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Nature Photography -->
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Hayden Creek-3.jpg" alt="Hayden Creek Nature Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Hayden Creek-3.jpg', 'Hayden Creek Nature Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Hayden Creek</h3>
+                        <p>Nature Photography</p>
+                        <div class="gallery-tags">
+                            <span>Landscape</span>
+                            <span>Nature</span>
+                            <span>Outdoors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait Photography -->
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/IMG_7204.jpeg" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/IMG_7204.jpeg', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Professional Portrait</h3>
+                        <p>Portrait Photography</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>Professional</span>
+                            <span>Studio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documentary Photography -->
+                <div class="gallery-item" data-category="documentary">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Journalism That Brings Life to You.png" alt="Documentary Journalism Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Journalism That Brings Life to You.png', 'Documentary Journalism Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Journalism That Brings Life</h3>
+                        <p>Documentary Photography</p>
+                        <div class="gallery-tags">
+                            <span>Documentary</span>
+                            <span>Journalism</span>
+                            <span>Storytelling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abstract Photography -->
+                <div class="gallery-item" data-category="abstract">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Pieces of a Puzzle.jpg" alt="Abstract Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Pieces of a Puzzle.jpg', 'Abstract Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Pieces of a Puzzle</h3>
+                        <p>Abstract Photography</p>
+                        <div class="gallery-tags">
+                            <span>Abstract</span>
+                            <span>Creative</span>
+                            <span>Artistic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Nature Work -->
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/IMG_2330.jpeg" alt="Additional Nature Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/IMG_2330.jpeg', 'Additional Nature Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Beauty</h3>
+                        <p>Nature Photography</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Beauty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Texture Photography -->
+                <div class="gallery-item" data-category="abstract">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Texture.jpeg" alt="Texture Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Texture.jpeg', 'Texture Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Texture Study</h3>
+                        <p>Abstract Photography</p>
+                        <div class="gallery-tags">
+                            <span>Texture</span>
+                            <span>Abstract</span>
+                            <span>Detail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="gallery-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jordan Tyler</h3>
+                    <p>Professional Photographer & Digital Marketer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../../index.html#services">Portfolio</a></li>
+                        <li><a href="../../index.html#about">About</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jordan Tyler. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

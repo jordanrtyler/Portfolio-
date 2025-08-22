@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Portfolio - Jordan Tyler</title>
+    <meta name="description" content="Professional graphic design portfolio showcasing logo design, marketing materials, and digital assets.">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/navigation.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">← Back to Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <header class="gallery-header">
+        <div class="container">
+            <h1 class="gallery-title">Graphic Design Portfolio</h1>
+            <p class="gallery-subtitle">Creating compelling visual experiences that drive results</p>
+            <div class="gallery-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">80+</span>
+                    <span class="stat-label">Designs Created</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Design Categories</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Work</button>
+                <button class="category-tab" data-category="digital">Digital</button>
+                <button class="category-tab" data-category="marketing">Marketing</button>
+                <button class="category-tab" data-category="beauty">Beauty Industry</button>
+                <button class="category-tab" data-category="poster">Poster Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Grid -->
+    <main class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Digital Design -->
+                <div class="gallery-item" data-category="digital">
+                    <div class="gallery-image-container">
+                        <img src="../../images/graphic-design/12.png" alt="Digital Design Work" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/graphic-design/12.png', 'Digital Design Work')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Digital Design</h3>
+                        <p>Modern digital artwork</p>
+                        <div class="gallery-tags">
+                            <span>Digital</span>
+                            <span>Modern</span>
+                            <span>Art</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poster Design -->
+                <div class="gallery-item" data-category="poster">
+                    <div class="gallery-image-container">
+                        <img src="../../images/graphic-design/Grey Black Vintage Texture Album Cover Poster-2.png" alt="Vintage Album Cover Design" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/graphic-design/Grey Black Vintage Texture Album Cover Poster-2.png', 'Vintage Album Cover Design')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Vintage Album Cover</h3>
+                        <p>Poster & Album Design</p>
+                        <div class="gallery-tags">
+                            <span>Vintage</span>
+                            <span>Album Cover</span>
+                            <span>Texture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marketing Design -->
+                <div class="gallery-item" data-category="marketing">
+                    <div class="gallery-image-container">
+                        <img src="../../images/graphic-design/purchase two facials and get one 30% off..png" alt="Marketing Promotion Design" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/graphic-design/purchase two facials and get one 30% off..png', 'Marketing Promotion Design')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Facial Promotion</h3>
+                        <p>Marketing Design</p>
+                        <div class="gallery-tags">
+                            <span>Marketing</span>
+                            <span>Promotion</span>
+                            <span>Beauty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beauty Industry Design -->
+                <div class="gallery-item" data-category="beauty">
+                    <div class="gallery-image-container">
+                        <img src="../../images/graphic-design/Slows Down Aging-2.png" alt="Anti-Aging Beauty Design" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/graphic-design/Slows Down Aging-2.png', 'Anti-Aging Beauty Design')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Anti-Aging Design</h3>
+                        <p>Beauty Industry Design</p>
+                        <div class="gallery-tags">
+                            <span>Beauty</span>
+                            <span>Anti-Aging</span>
+                            <span>Wellness</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Screenshot Design -->
+                <div class="gallery-item" data-category="digital">
+                    <div class="gallery-image-container">
+                        <img src="../../images/graphic-design/Screenshot 2025-08-05 at 10.02.44 PM.png" alt="Digital Screenshot Design" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/graphic-design/Screenshot 2025-08-05 at 10.02.44 PM.png', 'Digital Screenshot Design')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Digital Screenshot</h3>
+                        <p>Digital Design</p>
+                        <div class="gallery-tags">
+                            <span>Digital</span>
+                            <span>Screenshot</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="gallery-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jordan Tyler</h3>
+                    <p>Professional Graphic Designer & Digital Marketer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../../index.html#services">Portfolio</a></li>
+                        <li><a href="../../index.html#about">About</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jordan Tyler. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

@@ -41,7 +41,8 @@ const dirsToCopy = [
   'styles',
   'sections',
   'case-studies',
-  'images'
+  'images',
+  'galleries'
 ];
 
 console.log('🚀 Building for Vercel deployment...');
