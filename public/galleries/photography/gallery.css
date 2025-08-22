@@ -316,6 +316,24 @@
     image-rendering: crisp-edges;
 }
 
+/* Prevent browser image compression */
+.gallery-image {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    image-rendering: pixelated !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Ensure maximum quality in lightbox */
+#lightbox-image {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    image-rendering: pixelated !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .gallery-title {
