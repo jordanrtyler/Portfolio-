@@ -177,7 +177,7 @@
 .gallery-image {
     width: 100%;
     height: auto;
-    max-height: 350px;
+    max-height: 500px;
     object-fit: contain;
     border-bottom: 1px solid var(--border-color);
     transition: transform 0.3s ease;
@@ -187,6 +187,12 @@
     image-rendering: pixelated !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
+    /* Prevent browser compression */
+    image-rendering: auto !important;
+    /* Ensure maximum quality */
+    -webkit-image-smoothing: high-quality !important;
+    -moz-image-smoothing: high-quality !important;
+    image-smoothing: high-quality !important;
 }
 
 .gallery-item:hover .gallery-image {

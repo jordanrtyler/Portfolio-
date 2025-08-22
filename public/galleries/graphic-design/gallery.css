@@ -114,7 +114,7 @@
 .gallery-image {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 600px;
     object-fit: contain;
     transition: transform 0.3s ease;
     image-rendering: -webkit-optimize-contrast;
@@ -123,6 +123,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: block;
+    /* Prevent browser compression */
+    image-rendering: auto !important;
+    /* Ensure maximum quality */
+    -webkit-image-smoothing: high-quality !important;
+    -moz-image-smoothing: high-quality !important;
+    image-smoothing: high-quality !important;
 }
 
 .gallery-item:hover .gallery-image {
@@ -233,7 +239,7 @@
 
 #lightbox-image {
     max-width: 100%;
-    max-height: 80vh;
+    max-height: 90vh;
     object-fit: contain;
     border-radius: 10px;
     image-rendering: -webkit-optimize-contrast;
@@ -241,6 +247,11 @@
     image-rendering: pixelated;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Maximum quality for lightbox */
+    image-rendering: auto !important;
+    -webkit-image-smoothing: high-quality !important;
+    -moz-image-smoothing: high-quality !important;
+    image-smoothing: high-quality !important;
 }
 
 .lightbox-caption {
@@ -314,6 +325,20 @@
 .gallery-image-container {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
+}
+
+/* Prevent any image compression */
+.gallery-grid {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+}
+
+/* Ensure images maintain their natural quality */
+.gallery-image-container img {
+    image-rendering: auto !important;
+    -webkit-image-smoothing: high-quality !important;
+    -moz-image-smoothing: high-quality !important;
+    image-smoothing: high-quality !important;
 }
 
 /* Prevent browser image compression */
