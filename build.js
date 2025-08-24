@@ -29,6 +29,10 @@ function copyDir(src, dest) {
 // Copy all necessary files to public directory
 const filesToCopy = [
   'index.html',
+  'about.html',
+  'services.html',
+  'portfolio.html',
+  'contact.html',
   'script.js',
   'styles.css',
   'README.md',
