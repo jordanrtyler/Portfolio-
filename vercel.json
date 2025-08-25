@@ -8,10 +8,44 @@
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "/pages/home-page/index.html"
+    },
+    {
+      "src": "/home",
+      "dest": "/pages/home-page/index.html"
+    },
+    {
+      "src": "/about",
+      "dest": "/pages/about-page/about.html"
+    },
+    {
+      "src": "/services",
+      "dest": "/pages/services-page/services.html"
+    },
+    {
+      "src": "/portfolio",
+      "dest": "/pages/portfolio-page/portfolio.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/pages/contact-page/contact.html"
+    },
+    {
+      "src": "/photography",
+      "dest": "/pages/photography-gallery/index.html"
+    },
+    {
+      "src": "/graphic-design",
+      "dest": "/pages/graphic-design-gallery/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
   ],
   "outputDirectory": "public",
-  "public": true
+  "public": true,
+  "trailingSlash": false,
+  "cleanUrls": true
 }
