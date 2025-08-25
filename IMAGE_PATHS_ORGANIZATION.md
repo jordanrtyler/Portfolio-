@@ -14,9 +14,99 @@ images/
 
 ---
 
-## 📸 **Photography Gallery** (`galleries/photography/index.html`)
+## 🏠 **HOME PAGE** (`index.html`)
 
-### 🌿 **Nature Category (25 images)**
+### **Page-Specific Images**
+- **Favicon**: `favicon.svg`
+- **Hero Section**: FontAwesome icons (no direct images)
+- **CSS Graphics**: Gradient backgrounds and animated elements
+
+### **Navigation Links**
+- **Home**: `index.html` (active)
+- **About**: `about.html`
+- **Services**: `services.html`
+- **Portfolio**: `portfolio.html`
+- **Contact**: `contact.html`
+
+---
+
+## 👤 **ABOUT PAGE** (`about.html`)
+
+### **Page-Specific Images**
+- **Favicon**: `favicon.svg`
+- **Profile Section**: FontAwesome icons
+- **CSS Graphics**: Background patterns and gradients
+
+### **Navigation Links**
+- **Home**: `index.html`
+- **About**: `about.html` (active)
+- **Services**: `services.html`
+- **Portfolio**: `portfolio.html`
+- **Contact**: `contact.html`
+
+---
+
+## 🛠️ **SERVICES PAGE** (`sections/services/services.html`)
+
+### **Page-Specific Images**
+- **Favicon**: `favicon.svg`
+- **Service Icons**: FontAwesome icons
+- **Gallery Placeholders**: CSS-styled placeholders
+
+### **Gallery Links (Same Page)**
+- **Photography Gallery Link**: `../../galleries/photography/`
+- **Graphic Design Gallery Link**: `../../galleries/graphic-design/`
+
+### **Navigation Links**
+- **Home**: `index.html`
+- **About**: `about.html`
+- **Services**: `services.html` (active)
+- **Portfolio**: `portfolio.html`
+- **Contact**: `contact.html`
+
+---
+
+## 📚 **PORTFOLIO PAGE** (`sections/portfolio/portfolio.html`)
+
+### **Page-Specific Images**
+- **Favicon**: `favicon.svg`
+- **Portfolio Items**: CSS gradients and styling
+- **Case Study Links**: Links to external case study pages
+
+### **Case Study Links (Same Page)**
+- **Imperial Beauty**: `case-studies/ImperialBeauty/`
+- **Website Design**: `case-studies/website-design/`
+
+### **Navigation Links**
+- **Home**: `index.html`
+- **About**: `about.html`
+- **Services**: `services.html`
+- **Portfolio**: `portfolio.html` (active)
+- **Contact**: `contact.html`
+
+---
+
+## 📞 **CONTACT PAGE** (`sections/contact/contact.html`)
+
+### **Page-Specific Images**
+- **Favicon**: `favicon.svg`
+- **Contact Icons**: FontAwesome icons
+- **CSS Graphics**: Background patterns and forms
+
+### **Navigation Links**
+- **Home**: `index.html`
+- **About**: `about.html`
+- **Services**: `services.html`
+- **Portfolio**: `portfolio.html`
+- **Contact**: `contact.html` (active)
+
+---
+
+## 📸 **PHOTOGRAPHY GALLERY PAGE** (`galleries/photography/index.html`)
+
+### **Page-Specific Images - All 29 Images Displayed Here**
+
+#### **Nature Category (24 images) - Same Page Display**
 1. `../../images/photography/nature/hayden-creek-3.jpg` - Hayden Creek flowing water
 2. `../../images/photography/nature/IMG_2330.jpeg` - Natural landscape photography
 3. `../../images/photography/nature/5028712817_369fcec6b7_b-1.jpg` - Nature scene
@@ -42,20 +132,29 @@ images/
 23. `../../images/photography/nature/cbfd94_d76b3a97fea3477b9169cdcc2e4da204~mv2.jpeg.avif` - Natural detail
 24. `../../images/photography/nature/cbfd94_65c3bd52e73244d692ac14ff2ddc5763~mv2.jpeg.avif` - Natural landscape
 
-### 👤 **Portrait Category (3 images)**
-1. `../../images/photography/portrait/IMG_7204.jpeg` - Portrait photography
-2. `../../images/photography/portrait/cbfd94_4e1b11b74a504f1b88c87f0cc873234d~mv2.jpeg.avif` - Portrait photography
-3. `../../images/photography/portrait/cbfd94_ce9e0d49107744eeb63d0797bb275776~mv2.jpg.avif` - Portrait photography
+#### **Portrait Category (3 images) - Same Page Display**
+25. `../../images/photography/portrait/IMG_7204.jpeg` - Portrait photography
+26. `../../images/photography/portrait/cbfd94_4e1b11b74a504f1b88c87f0cc873234d~mv2.jpeg.avif` - Portrait photography
+27. `../../images/photography/portrait/cbfd94_ce9e0d49107744eeb63d0797bb275776~mv2.jpg.avif` - Portrait photography
 
-### 📖 **Storytelling Category (2 images)**
-1. `../../images/photography/storytelling/pieces-of-a-puzzle.jpg` - Pieces of a puzzle
-2. `../../images/photography/storytelling/Texture.jpeg` - Natural texture
+#### **Storytelling Category (2 images) - Same Page Display**
+28. `../../images/photography/storytelling/pieces-of-a-puzzle.jpg` - Pieces of a puzzle
+29. `../../images/photography/storytelling/Texture.jpeg` - Natural texture
+
+### **Page Navigation Links**
+- **Home**: `../../` (root)
+- **About**: `../../#about`
+- **Services**: `../../#services`
+- **Portfolio**: `../../#portfolio`
+- **Contact**: `../../#contact`
 
 ---
 
-## 🎨 **Graphic Design Gallery** (`galleries/graphic-design/index.html`)
+## 🎨 **GRAPHIC DESIGN GALLERY PAGE** (`galleries/graphic-design/index.html`)
 
-### 📱 **Social Media Category (10 images)**
+### **Page-Specific Images - All 12 Images Displayed Here**
+
+#### **Social Media Category (10 images) - Same Page Display**
 1. `../../images/graphic-design/social-media/cbfd94_4cfe00f2e5314e33b95d1736ddcb7ee2~mv2.png.avif` - Social media design
 2. `../../images/graphic-design/social-media/cbfd94_c1ea98acbd32419483e473d564261921~mv2.png.avif` - Social media design
 3. `../../images/graphic-design/social-media/cbfd94_aa532a51895a4797842474e81e3eb95a~mv2.png.avif` - Social media design
@@ -67,74 +166,74 @@ images/
 9. `../../images/graphic-design/social-media/12.png` - Social media design
 10. `../../images/graphic-design/social-media/purchase-two-facials-promotion.png` - Promotional design
 
-### 🎯 **Design Work Category (2 images)**
-1. `../../images/graphic-design/design-work/screenshot-design-work.png` - Design work screenshot
-2. `../../images/graphic-design/design-work/grey-black-vintage-texture-album-cover-poster-2.png` - Vintage album cover design
+#### **Design Work Category (2 images) - Same Page Display**
+11. `../../images/graphic-design/design-work/screenshot-design-work.png` - Design work screenshot
+12. `../../images/graphic-design/design-work/grey-black-vintage-texture-album-cover-poster-2.png` - Vintage album cover design
+
+### **Page Navigation Links**
+- **Home**: `../../` (root)
+- **About**: `../../#about`
+- **Services**: `../../#services`
+- **Portfolio**: `../../#portfolio`
+- **Contact**: `../../#contact`
 
 ---
 
-## 🏠 **Home Page** (`index.html`)
+## 📖 **CASE STUDY PAGES**
 
-### 🎭 **Hero Section**
-- No direct images (uses FontAwesome icons and CSS graphics)
+### **Imperial Beauty Page** (`case-studies/ImperialBeauty/index.html`)
+- **Page-Specific Images**: CSS styling and graphics (no direct images)
+- **Navigation**: Links back to main site
+- **Content**: Beauty industry case study
 
----
-
-## 📋 **Services Page** (`sections/services/services.html`)
-
-### 🖼️ **Gallery Section**
-- Uses placeholder images and icons
-- Links to dedicated gallery pages:
-  - Photography: `../../galleries/photography/`
-  - Graphic Design: `../../galleries/graphic-design/`
+### **Website Design Page** (`case-studies/website-design/index.html`)
+- **Page-Specific Images**: CSS styling and graphics (no direct images)
+- **Navigation**: Links back to main site
+- **Content**: Website design case study
 
 ---
 
-## 📚 **Portfolio Page** (`sections/portfolio/portfolio.html`)
+## 🔗 **Cross-Page Navigation Structure**
 
-### 🎨 **Portfolio Items**
-- Uses CSS gradients and placeholder content
-- Links to case studies:
-  - Imperial Beauty: `case-studies/ImperialBeauty/`
-  - Website Design: `case-studies/website-design/`
+### **Main Site Navigation (All Pages)**
+```
+index.html (Home)
+├── about.html
+├── services.html
+├── portfolio.html
+└── contact.html
+```
 
----
+### **Gallery Navigation (Gallery Pages)**
+```
+galleries/
+├── photography/
+│   └── index.html (29 images displayed)
+└── graphic-design/
+    └── index.html (12 images displayed)
+```
 
-## 📖 **Case Studies**
-
-### 💄 **Imperial Beauty** (`case-studies/ImperialBeauty/index.html`)
-- No direct images (uses CSS styling)
-
-### 🌐 **Website Design** (`case-studies/website-design/index.html`)
-- No direct images (uses CSS styling)
-
----
-
-## 🔗 **Navigation & Links**
-
-### 🧭 **Main Navigation**
-- Home: `index.html`
-- About: `about.html`
-- Services: `services.html`
-- Portfolio: `portfolio.html`
-- Contact: `contact.html`
-
-### 🖼️ **Gallery Links**
-- Photography: `galleries/photography/`
-- Graphic Design: `galleries/graphic-design/`
+### **Case Study Navigation (Case Study Pages)**
+```
+case-studies/
+├── ImperialBeauty/
+│   └── index.html
+└── website-design/
+    └── index.html
+```
 
 ---
 
 ## 📱 **Responsive Image Handling**
 
-### 🎯 **Image Optimization Features**
-- **Lazy Loading**: All images use `loading="lazy"`
+### **Page-Level Image Optimization**
+- **Lazy Loading**: All gallery images on their respective pages
 - **Aspect Ratios**: Consistent 4:3 ratios for gallery images
 - **Quality Settings**: High-quality rendering with no compression
 - **Responsive Grids**: Adapts to different screen sizes
 - **Hover Effects**: Smooth scaling and brightness adjustments
 
-### 🎨 **CSS Image Properties**
+### **CSS Image Properties (Applied to All Gallery Pages)**
 ```css
 .gallery-image {
     width: 100%;
@@ -148,35 +247,73 @@ images/
 
 ---
 
-## 📊 **Image Statistics**
+## 📊 **Page-by-Page Image Statistics**
 
-### 📸 **Total Images by Category**
-- **Nature Photography**: 24 images
-- **Portrait Photography**: 3 images
-- **Storytelling Photography**: 2 images
-- **Social Media Design**: 10 images
-- **Design Work**: 2 images
-- **Total**: 41 images
+### **Home Page** (`index.html`)
+- **Direct Images**: 0 (uses CSS graphics and icons)
+- **Navigation Links**: 5
 
-### 📁 **File Types**
-- **JPEG**: 15 images
-- **PNG**: 8 images
-- **AVIF**: 18 images
-- **Total**: 41 images
+### **About Page** (`about.html`)
+- **Direct Images**: 0 (uses CSS graphics and icons)
+- **Navigation Links**: 5
+
+### **Services Page** (`sections/services/services.html`)
+- **Direct Images**: 0 (uses CSS graphics and icons)
+- **Gallery Links**: 2 (to external gallery pages)
+- **Navigation Links**: 5
+
+### **Portfolio Page** (`sections/portfolio/portfolio.html`)
+- **Direct Images**: 0 (uses CSS graphics and styling)
+- **Case Study Links**: 2 (to external case study pages)
+- **Navigation Links**: 5
+
+### **Contact Page** (`sections/contact/contact.html`)
+- **Direct Images**: 0 (uses CSS graphics and icons)
+- **Navigation Links**: 5
+
+### **Photography Gallery Page** (`galleries/photography/index.html`)
+- **Direct Images**: 29 (all displayed on this single page)
+- **Navigation Links**: 5 (back to main site)
+
+### **Graphic Design Gallery Page** (`galleries/graphic-design/index.html`)
+- **Direct Images**: 12 (all displayed on this single page)
+- **Navigation Links**: 5 (back to main site)
 
 ---
 
 ## 🚀 **Performance Notes**
 
-### ⚡ **Optimization Features**
-- Lazy loading for all gallery images
-- Optimized CSS for smooth scaling
-- Responsive design for all screen sizes
-- High-quality image rendering
-- Efficient grid layouts
+### **Page-Level Optimization Features**
+- **Lazy Loading**: Implemented on all gallery pages
+- **Optimized CSS**: Smooth scaling and quality for all images
+- **Responsive Design**: All pages work on all screen sizes
+- **High-Quality Rendering**: Maximum image quality with no compression
+- **Efficient Grid Layouts**: Optimized for performance
 
-### 📱 **Mobile Optimization**
-- Responsive grid systems
-- Touch-friendly interactions
-- Optimized loading for mobile devices
-- Consistent aspect ratios across devices
+### **Mobile Optimization (All Pages)**
+- **Responsive Grid Systems**: Adapts to different screen sizes
+- **Touch-Friendly Interactions**: Optimized for mobile devices
+- **Consistent Aspect Ratios**: Maintains quality across devices
+- **Optimized Loading**: Fast loading on mobile devices
+
+---
+
+## 📋 **Summary by Page Display**
+
+### **Pages with Multiple Images Displayed:**
+1. **Photography Gallery**: 29 images (all nature, portrait, storytelling)
+2. **Graphic Design Gallery**: 12 images (all social media, design work)
+
+### **Pages with No Direct Images:**
+1. **Home Page**: CSS graphics and icons only
+2. **About Page**: CSS graphics and icons only
+3. **Services Page**: CSS graphics and icons only
+4. **Portfolio Page**: CSS graphics and styling only
+5. **Contact Page**: CSS graphics and icons only
+6. **Case Study Pages**: CSS graphics and styling only
+
+### **Total Images by Display Location:**
+- **Photography Gallery Page**: 29 images
+- **Graphic Design Gallery Page**: 12 images
+- **All Other Pages Combined**: 0 direct images
+- **Total Images**: 41 images

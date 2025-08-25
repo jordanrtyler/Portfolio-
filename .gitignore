@@ -1,0 +1,67 @@
+# Hide non-code files and documentation
+*.md
+README.md
+IMAGE_PATHS_ORGANIZATION.md
+PHOTOGRAPHY_PATHS.md
+GRAPHIC_DESIGN_PATHS.md
+PAGE_BY_PAGE_PATHS.md
+PAGE_ORGANIZATION.md
+COMPLETE_PAGE_ORGANIZATION.md
+CODE_ONLY_VIEW.md
+
+# Hide system files
+.DS_Store
+Thumbs.db
+
+# Hide IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Hide build and deployment files
+public/
+.vercel/
+vercel.json
+.vercelignore
+build.js
+
+# Hide package management
+node_modules/
+package-lock.json
+yarn.lock
+
+# Hide environment files
+.env
+.env.local
+.env.production
+
+# Hide log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Hide temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Hide image files (since they're large and not code)
+images/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.webp
+*.avif
+
+# Hide favicon files (not code)
+favicon.svg
+favicon.html
+
+# Hide license and other non-code files
+LICENSE
+CNAME
