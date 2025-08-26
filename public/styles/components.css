@@ -121,6 +121,24 @@
     box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
 }
 
+.cta-button.primary {
+    background: #fbbf24;
+    color: #333;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    box-shadow: none;
+}
+
+.cta-button.secondary:hover {
+    background: var(--secondary-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
 /* Submit Button */
 .submit-button {
     background: #2563eb;
