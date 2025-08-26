@@ -49,14 +49,6 @@ const dirsToCopy = [
   'galleries'
 ];
 
-// Additional CSS files to copy to root of public
-const cssFilesToCopy = [
-  'styles/main.css',
-  'styles/navigation.css',
-  'styles/components.css',
-  'styles/pages.css'
-];
-
 console.log('🚀 Building for Vercel deployment...');
 
 // Copy individual files
@@ -64,15 +56,6 @@ filesToCopy.forEach(file => {
   if (fs.existsSync(file)) {
     fs.copyFileSync(file, `public/${file}`);
     console.log(`✅ Copied: ${file}`);
-  }
-});
-
-// Copy CSS files to root of public
-cssFilesToCopy.forEach(cssFile => {
-  if (fs.existsSync(cssFile)) {
-    const fileName = path.basename(cssFile);
-    fs.copyFileSync(cssFile, `public/${fileName}`);
-    console.log(`🎨 Copied CSS: ${fileName}`);
   }
 });
 
