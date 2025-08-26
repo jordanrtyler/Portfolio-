@@ -1152,6 +1152,45 @@
     }
 }
 
+/* Image Quality Enhancement - Prevent Pixelation */
+.hero-graphic,
+.profile-placeholder,
+.service-icon,
+.portfolio-image,
+.about-image img,
+.contact-image,
+.gallery-image,
+.portfolio-image img,
+.service-image {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    image-rendering: high-quality !important;
+    image-rendering: auto !important;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* High-DPI display optimization */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-graphic,
+    .profile-placeholder,
+    .service-icon,
+    .portfolio-image,
+    .about-image img,
+    .contact-image,
+    .gallery-image,
+    .portfolio-image img,
+    .service-image {
+        image-rendering: -webkit-optimize-contrast !important;
+        image-rendering: crisp-edges !important;
+        image-rendering: high-quality !important;
+        image-rendering: auto !important;
+    }
+}
+
 /* Additional Responsive Design */
 @media (max-width: 768px) {
     .hamburger {

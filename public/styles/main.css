@@ -220,7 +220,7 @@ body {
     }
 }
 
-/* Image Optimization and Quality */
+/* Image Optimization and Quality - Anti-Pixelation */
 img {
     max-width: 100%;
     height: auto;
@@ -228,7 +228,15 @@ img {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     image-rendering: high-quality;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: auto;
     object-fit: cover;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .gallery-image {
@@ -241,6 +249,10 @@ img {
 
 .gallery-image:hover {
     transform: scale(1.05);
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    image-rendering: high-quality !important;
+    image-rendering: auto !important;
 }
 
 .portfolio-image img {
@@ -257,9 +269,53 @@ img {
     border-radius: 8px;
 }
 
-/* Ensure high-quality image rendering */
-img[src*=".jpg"], img[src*=".jpeg"], img[src*=".png"], img[src*=".avif"] {
+/* Ensure high-quality image rendering for all formats */
+img[src*=".jpg"], img[src*=".jpeg"], img[src*=".png"], img[src*=".avif"], img[src*=".webp"], img[src*=".svg"] {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     image-rendering: high-quality;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: auto;
+}
+
+/* Prevent pixelation on high-DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        image-rendering: high-quality;
+        image-rendering: auto;
+    }
+}
+
+/* Force high quality for specific image classes */
+.gallery-image,
+.portfolio-image img,
+.service-image,
+.hero-image,
+.about-image img,
+.contact-image {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    image-rendering: high-quality !important;
+    image-rendering: auto !important;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+    transition: all 0.3s ease;
+}
+
+/* Prevent pixelation during hover and animations */
+.gallery-image:hover,
+.portfolio-image img:hover,
+.service-image:hover,
+.hero-image:hover,
+.about-image img:hover,
+.contact-image:hover {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    image-rendering: high-quality !important;
+    image-rendering: auto !important;
+    transform: translateZ(0) scale(1.05);
 }
