@@ -61,113 +61,176 @@
             </div>
         </div>
         
-        <!-- Photography & Graphic Design Gallery -->
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <div class="separator-line"></div>
+            <div class="separator-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="separator-line"></div>
+        </div>
+        
+        <!-- Photography & Graphic Design Gallery - Side by Side -->
         <div class="gallery-section">
-            <h3 class="gallery-title">Visual Portfolio Showcase</h3>
-            <div class="gallery-tabs">
-                <button class="gallery-tab active" data-tab="photography">Photography</button>
-                <button class="gallery-tab" data-tab="graphic-design">Graphic Design</button>
-            </div>
+            <h3 class="gallery-title main-gallery-title">Visual Portfolio Showcase</h3>
             
-            <div class="gallery-cta">
-                <div class="gallery-links">
-                    <a href="../../galleries/photography/" class="btn btn-primary">View Full Photography Gallery</a>
-                    <a href="../../galleries/graphic-design/" class="btn btn-secondary">View Full Graphic Design Gallery</a>
+            <!-- Side by Side Layout -->
+            <div class="side-by-side-galleries">
+                <!-- Photography Gallery -->
+                <div class="gallery-column">
+                    <div class="gallery-header">
+                        <h3 class="gallery-title">Photography Portfolio</h3>
+                        <p class="gallery-subtitle">Capturing moments, stories, and visual narratives through professional photography</p>
+                    </div>
+                    
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="image-container">
+                                <img src="images/photography/nature/hayden-creek-3.jpg" alt="Hayden Creek Photography" class="gallery-image">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <span class="category-badge">Nature</span>
+                                        <h4 class="image-title">Hayden Creek</h4>
+                                        <p class="image-description">Serene landscape photography capturing the natural beauty of flowing water</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-caption">
+                                <div class="caption-header">
+                                    <span class="photo-category">Nature Photography</span>
+                                    <span class="photo-type">Landscape</span>
+                                </div>
+                                <h4>Hayden Creek</h4>
+                                <p>Beautiful landscape and nature imagery showcasing the tranquility of natural waterways</p>
+                                <div class="photo-details">
+                                    <span class="detail-item">
+                                        <i class="fas fa-camera"></i>
+                                        <span>Professional Grade</span>
+                                    </span>
+                                    <span class="detail-item">
+                                        <i class="fas fa-palette"></i>
+                                        <span>Natural Colors</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <div class="image-container">
+                                <img src="images/photography/portrait/IMG_7204.jpeg" alt="Portrait Photography" class="gallery-image">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <span class="category-badge">Portrait</span>
+                                        <h4 class="image-title">Professional Portrait</h4>
+                                        <p class="image-description">Relaxed and natural portrait photography</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-caption">
+                                <div class="caption-header">
+                                    <span class="photo-category">Portrait Photography</span>
+                                    <span class="photo-type">Professional</span>
+                                </div>
+                                <h4>Professional Portrait</h4>
+                                <p>Relaxed portrait taken of solo subject with natural lighting and composition</p>
+                                <div class="photo-details">
+                                    <span class="detail-item">
+                                        <i class="fas fa-user"></i>
+                                        <span>Natural Posing</span>
+                                    </span>
+                                    <span class="detail-item">
+                                        <i class="fas fa-sun"></i>
+                                        <span>Soft Lighting</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-cta">
+                        <a href="galleries/photography/" class="btn btn-primary">
+                            <span>View Full Photography Gallery</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Photography Gallery -->
-            <div class="gallery-content active" id="photography-gallery">
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/photography/nature/hayden-creek-3.jpg" alt="Hayden Creek Photography" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Nature Photography</h4>
-                            <p>Beautiful landscape and nature imagery</p>
+                
+                <!-- Graphic Design Gallery -->
+                <div class="gallery-column">
+                    <div class="gallery-header">
+                        <h3 class="gallery-title">Graphic Design Portfolio</h3>
+                        <p class="gallery-subtitle">Creating compelling visual designs that strengthen brand identity and drive engagement</p>
+                    </div>
+                    
+                    <div class="gallery-grid">
+                        <div class="gallery-item featured">
+                            <div class="image-container">
+                                <img src="images/graphic-design/social-media/12.png" alt="Social Media Design" class="gallery-image">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <span class="category-badge">Social Media</span>
+                                        <h4 class="image-title">Social Media Design</h4>
+                                        <p class="image-description">Engaging social media graphics</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-caption">
+                                <div class="caption-header">
+                                    <span class="photo-category">Social Media Design</span>
+                                    <span class="photo-type">Digital</span>
+                                </div>
+                                <h4>Social Media Design</h4>
+                                <p>Professional social media graphics designed to maximize engagement and brand visibility</p>
+                                <div class="photo-details">
+                                    <span class="detail-item">
+                                        <i class="fas fa-share-alt"></i>
+                                        <span>Social Ready</span>
+                                    </span>
+                                    <span class="detail-item">
+                                        <i class="fas fa-eye"></i>
+                                        <span>High Engagement</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <div class="image-container">
+                                <img src="images/graphic-design/social-media/purchase-two-facials-promotion.png" alt="Promotional Design" class="gallery-image">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <span class="category-badge">Marketing</span>
+                                        <h4 class="image-title">Promotional Design</h4>
+                                        <p class="image-description">Marketing and promotional materials</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-caption">
+                                <div class="caption-header">
+                                    <span class="photo-category">Marketing Design</span>
+                                    <span class="photo-type">Promotional</span>
+                                </div>
+                                <h4>Promotional Design</h4>
+                                <p>Strategic marketing materials designed to drive conversions and increase brand awareness</p>
+                                <div class="photo-details">
+                                    <span class="detail-item">
+                                        <i class="fas fa-bullhorn"></i>
+                                        <span>Conversion Focused</span>
+                                    </span>
+                                    <span class="detail-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>Results Driven</span>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/photography/portrait/IMG_7204.jpeg" alt="Portrait Photography" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Portrait Photography</h4>
-                            <p>Relaxed portrait taken of solo subject</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/photography/nature/IMG_2330.jpeg" alt="Nature Photography" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Nature Photography</h4>
-                            <p>Beautiful natural landscape photography</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/photography/nature/cbfd94_232cfc33e1004a989e5e89eb14bfa628~mv2.jpg.avif" alt="Nature Photography" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Nature Photography</h4>
-                            <p>Beautiful natural scenes</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/photography/portrait/cbfd94_31661f0a2fad4bc7b55e4190910d4f82~mv2.jpg.avif" alt="Portrait Photography" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Portrait Photography</h4>
-                            <p>Professional portrait photography</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/photography/storytelling/pieces-of-a-puzzle.jpg" alt="Storytelling Photography" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Storytelling Photography</h4>
-                            <p>Creative and artistic photography</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Graphic Design Gallery -->
-            <div class="gallery-content" id="graphic-design-gallery">
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/graphic-design/social-media/12.png" alt="Social Media Design" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Social Media Design</h4>
-                            <p>Engaging social media graphics</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/graphic-design/social-media/purchase-two-facials-promotion.png" alt="Promotional Design" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Promotional Design</h4>
-                            <p>Marketing and promotional materials</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/graphic-design/social-media/slows-down-aging-2.png" alt="Beauty Industry Design" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Beauty Industry Design</h4>
-                            <p>Specialized design for beauty and wellness</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/graphic-design/design-work/grey-black-vintage-texture-album-cover-poster-2.png" alt="Album Cover Design" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Concert Poster Design</h4>
-                            <p>Mock vintage poster design built in Adobe Photoshop</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/graphic-design/design-work/cbfd94_0a1c528f9ee441e18782302bab54625c~mv2.jpeg.avif" alt="Digital Design Work" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Digital Design Work</h4>
-                            <p>Modern digital design projects</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/graphic-design/design-work/cbfd94_2d69de7ae44d4ff5a1c96f898c42c591~mv2.png.avif" alt="Design Project" class="gallery-image">
-                        <div class="gallery-caption">
-                            <h4>Design Project</h4>
-                            <p>Creative design solutions</p>
-                        </div>
+                    
+                    <div class="gallery-cta">
+                        <a href="galleries/graphic-design/" class="btn btn-primary">
+                            <span>View Full Graphic Design Gallery</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
