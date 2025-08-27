@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jordan Tyler | Digital Marketing Portfolio</title>
+    <meta name="description" content="Get in touch with Jordan Tyler to discuss your digital marketing needs. Let's work together to grow your business online.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="sections/contact/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">JT</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="page-header contact-header">
+        <div class="container">
+            <h1>Let's Work Together</h1>
+            <p>Ready to take your digital presence to the next level?</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <section class="contact-section contact-form">
+                    <h2>Get In Touch</h2>
+                    <p>Fill out the form below and I'll get back to you within 24 hours to discuss your project.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="seo">SEO & Analytics</option>
+                                <option value="ppc">PPC & Advertising</option>
+                                <option value="social-media">Social Media Management</option>
+                                <option value="content">Content Strategy</option>
+                                <option value="photography">Photography</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="consulting">Digital Marketing Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-1000">Under $1,000</option>
+                                <option value="1000-5000">$1,000 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000-25000">$10,000 - $25,000</option>
+                                <option value="25000-plus">$25,000+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-2-weeks">1-2 weeks</option>
+                                <option value="1-month">1 month</option>
+                                <option value="2-3-months">2-3 months</option>
+                                <option value="3-plus-months">3+ months</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, goals, and any specific requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </section>
+                
+                <!-- Contact Information -->
+                <section class="contact-section contact-info">
+                    <h2>Other Ways to Connect</h2>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <p>hello@jordantyler.com</p>
+                                <p>I typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <p>Available Mon-Fri, 9 AM - 6 PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Schedule a Call</h3>
+                                <p>Book a 30-minute consultation</p>
+                                <a href="#" class="btn btn-outline">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow My Work</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jordan Tyler</h3>
+                    <p>Digital Marketing Specialist helping businesses grow their online presence through strategic marketing solutions.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Social Media Marketing</a></li>
+                        <li><a href="services.html">SEO Optimization</a></li>
+                        <li><a href="services.html">Graphic Design</a></li>
+                        <li><a href="services.html">Photography</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jordan Tyler. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
