@@ -864,54 +864,7 @@
     box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
 }
 
-/* Portfolio CTA */
-.portfolio-cta {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: 25px;
-    padding: 60px 40px;
-    text-align: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
 
-.portfolio-cta::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    33% { transform: translate(30px, -30px) rotate(120deg); }
-    66% { transform: translate(-20px, 20px) rotate(240deg); }
-}
-
-.cta-content {
-    position: relative;
-    z-index: 2;
-}
-
-.portfolio-cta h3 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.portfolio-cta p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    margin-bottom: 35px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-}
 
 .cta-actions {
     display: flex;
@@ -974,54 +927,7 @@
     color: var(--text-primary);
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
 
-.portfolio-item.featured {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-item.featured:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-/* Responsive design for portfolio grid */
-@media (max-width: 1200px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        max-width: 800px;
-    }
-}
-
-@media (max-width: 768px) {
-    .portfolio-grid {
-        gap: 30px;
-    }
-    
-    .portfolio-item.featured {
-        padding: 25px;
-    }
-}
-
-.portfolio-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
 
 .portfolio-content h3 {
     font-size: 2rem;
@@ -1041,12 +947,7 @@
     margin-bottom: 30px;
 }
 
-.portfolio-results {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 30px;
-}
+
 
 .result-item {
     text-align: center;
@@ -1360,7 +1261,6 @@
 /* CTA Sections */
 .about-cta,
 .services-cta,
-.portfolio-cta,
 .contact-cta {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
@@ -1399,14 +1299,9 @@
         gap: 40px;
     }
     
-    .portfolio-item.featured {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+
     
-    .portfolio-results {
-        grid-template-columns: 1fr;
-    }
+
     
     .cta-buttons {
         flex-direction: column;
@@ -1457,18 +1352,7 @@
         padding: 30px 20px;
     }
     
-    .portfolio-cta {
-        padding: 40px 20px;
-        border-radius: 20px;
-    }
-    
-    .portfolio-cta h3 {
-        font-size: 2rem;
-    }
-    
-    .portfolio-cta p {
-        font-size: 1.1rem;
-    }
+
     
     .cta-actions {
         flex-direction: column;
@@ -1906,11 +1790,9 @@
 .hero-graphic,
 .profile-placeholder,
 .service-icon,
-.portfolio-image,
 .about-image img,
 .contact-image,
 .gallery-image,
-.portfolio-image img,
 .service-image {
     image-rendering: -webkit-optimize-contrast !important;
     image-rendering: crisp-edges !important;
@@ -1927,18 +1809,16 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero-graphic,
     .profile-placeholder,
-    .service-icon,
-    .portfolio-image,
-    .about-image img,
-    .contact-image,
-    .gallery-image,
-    .portfolio-image img,
-    .service-image {
-        image-rendering: -webkit-optimize-contrast !important;
-        image-rendering: crisp-edges !important;
-        image-rendering: high-quality !important;
-        image-rendering: auto !important;
-    }
+.service-icon,
+.about-image img,
+.contact-image,
+.gallery-image,
+.service-image {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    image-rendering: high-quality !important;
+    image-rendering: auto !important;
+}
 }
 
 /* Additional Responsive Design */
@@ -2047,9 +1927,7 @@
         grid-template-columns: 1fr;
     }
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
+
 
         .hero {
         padding: clamp(80px, 12vw, 120px) 0 clamp(50px, 8vw, 80px);
@@ -2079,8 +1957,7 @@
         padding: 0 15px;
     }
 
-    .service-card,
-    .portfolio-item {
+    .service-card {
         margin: 0 10px;
     }
 }
