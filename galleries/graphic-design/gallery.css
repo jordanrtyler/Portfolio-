@@ -1,6 +1,6 @@
-/* Gallery Page Styles */
-.gallery-header {
-    background: var(--gradient-primary);
+/* Gallery Page Styles - Using Portfolio Header */
+.page-header.portfolio-header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -9,7 +9,7 @@
 }
 
 /* Geometric Design Elements */
-.gallery-header::before {
+.page-header.portfolio-header::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -24,7 +24,7 @@
     pointer-events: none;
 }
 
-.gallery-header::after {
+.page-header.portfolio-header::after {
     content: '';
     position: absolute;
     top: 15%;
@@ -49,7 +49,7 @@
     75% { transform: translateY(-10px) rotate(270deg) scale(1.1); }
 }
 
-.gallery-title {
+.page-header.portfolio-header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -156,23 +156,24 @@
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
 }
 
-/* Main Gallery */
-.gallery-main {
-    padding: 3rem 0;
+/* Main Gallery - Using Portfolio Structure */
+.portfolio-main {
+    padding: 0 0 80px;
 }
 
-.gallery-grid {
+.portfolio-section {
+    margin-bottom: 80px;
+}
+
+.portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 1rem;
     position: relative;
 }
 
 /* Background Pattern for Gallery */
-.gallery-grid::before {
+.portfolio-grid::before {
     content: '';
     position: absolute;
     top: -50px;
@@ -200,11 +201,9 @@
     background: var(--background-white);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 8px 25px var(--shadow-light);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 2px solid transparent;
+    box-shadow: 0 5px 20px var(--shadow-light);
+    transition: transform 0.3s ease;
     position: relative;
-    background-clip: padding-box;
 }
 
 .gallery-item::before {
@@ -243,9 +242,7 @@
 }
 
 .gallery-item:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 25px 50px rgba(102, 126, 234, 0.2);
-    border-color: var(--secondary-color);
+    transform: translateY(-5px);
 }
 
 .gallery-item:hover::before {
@@ -257,10 +254,13 @@
 }
 
 .gallery-image-container {
+    height: 250px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    aspect-ratio: 4/3;
-    background: #f8fafc;
 }
 
 .gallery-image {
@@ -298,9 +298,13 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
+    color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 2rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -345,7 +349,9 @@
 }
 
 .gallery-info {
-    padding: 1.5rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .gallery-info h3 {
