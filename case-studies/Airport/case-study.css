@@ -392,6 +392,31 @@
     margin-top: 1rem;
 }
 
+.sidebar-card .cta-button.external-link {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sidebar-card .cta-button.external-link:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.sidebar-card .cta-button.external-link i {
+    font-size: 0.9rem;
+}
+
 /* Footer */
 .case-study-footer {
     background: var(--background-dark);
