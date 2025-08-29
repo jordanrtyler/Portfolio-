@@ -72,6 +72,8 @@
     border: 2px solid transparent;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .nav-link::before {
@@ -82,7 +84,8 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
-    transition: left 0.5s ease;
+    transition: left 0.3s ease;
+    z-index: -1;
 }
 
 .nav-link:hover::before {
@@ -93,7 +96,7 @@
     color: white;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-color: var(--primary-color);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
