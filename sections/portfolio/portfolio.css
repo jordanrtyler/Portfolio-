@@ -170,6 +170,54 @@
     min-width: 200px;
 }
 
+/* Portfolio CTA Section */
+.portfolio-cta {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+    color: white;
+    padding: 80px 40px;
+    border-radius: 25px;
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-cta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 60%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 50%, rgba(236, 72, 153, 0.1) 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: float 8s ease-in-out infinite;
+}
+
+.portfolio-cta .cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.portfolio-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.portfolio-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #e2e8f0;
+    line-height: 1.6;
+    opacity: 1;
+}
+
 /* Featured Categories */
 .featured-categories {
     grid-template-columns: repeat(2, 1fr);
@@ -275,5 +323,18 @@
     
     .featured-card h3 {
         font-size: 1.7rem;
+    }
+    
+    .portfolio-cta {
+        padding: 60px 30px;
+        margin-top: 60px;
+    }
+    
+    .portfolio-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .portfolio-cta p {
+        font-size: 1.1rem;
     }
 }
