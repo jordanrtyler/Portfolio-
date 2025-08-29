@@ -241,10 +241,7 @@
     max-height: 100%;
 }
 
-.gallery-item:hover .gallery-image {
-    transform: scale(1.08);
-    filter: brightness(1.05);
-}
+
 
 .gallery-overlay {
     position: absolute;
@@ -439,104 +436,43 @@
     color: var(--text-muted);
 }
 
-/* Additional Image Quality Enhancements */
-.gallery-item {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-}
 
-.gallery-image-container {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-}
 
-/* Prevent any image compression */
-.gallery-grid {
-    image-rendering: -webkit-optimize-contrast !important;
-    image-rendering: crisp-edges !important;
-}
 
-/* Ensure images maintain their natural quality */
-.gallery-image-container img {
-    image-rendering: auto !important;
-    -webkit-image-smoothing: high-quality !important;
-    -moz-image-smoothing: high-quality !important;
-    image-smoothing: high-quality !important;
-}
-
-/* Prevent browser image compression */
-.gallery-image {
-    image-rendering: -webkit-optimize-contrast !important;
-    image-rendering: crisp-edges !important;
-    image-rendering: pixelated !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-}
-
-/* Ensure maximum quality in lightbox */
-#lightbox-image {
-    image-rendering: -webkit-optimize-contrast !important;
-    image-rendering: crisp-edges !important;
-    image-rendering: pixelated !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .gallery-title {
+    .page-header.portfolio-header h1 {
         font-size: 2.5rem;
     }
     
-    .gallery-stats {
-        flex-direction: column;
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 1.5rem;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        padding: 0 0.5rem;
-    }
-    
-    .category-tabs {
-        gap: 0.5rem;
     }
     
     .category-tab {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
-
-    .gallery-image-container {
-        aspect-ratio: 3/2;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .gallery-title {
+    .page-header.portfolio-header h1 {
         font-size: 2rem;
     }
     
-    .gallery-subtitle {
-        font-size: 1rem;
+    .page-header.portfolio-header p {
+        font-size: 1.1rem;
     }
     
-    .gallery-image {
-        height: 250px;
-    }
-    
-    .lightbox-content {
-        width: 95%;
-        padding: 10px;
-    }
-
-    .gallery-grid {
+    .portfolio-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
     
-    .gallery-image-container {
-        aspect-ratio: 4/3;
+    .category-tab {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
     }
 }
