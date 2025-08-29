@@ -1,7 +1,9 @@
 // Gallery Page Functionality
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Gallery JavaScript loaded');
     initializeGalleryTabs();
     initializeLightbox();
+    console.log('Gallery initialization complete');
 });
 
 // Category tab functionality
@@ -48,9 +50,17 @@ function filterGalleryItems(category) {
 
 // Lightbox functionality
 function initializeLightbox() {
+    console.log('Initializing lightbox...');
     const lightbox = document.getElementById('lightbox');
     const closeBtn = document.querySelector('.close-lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
+    
+    console.log('Lightbox elements found:', { lightbox, closeBtn, lightboxImage });
+    
+    if (!lightbox || !closeBtn || !lightboxImage) {
+        console.error('Missing lightbox elements');
+        return;
+    }
     
     // Close lightbox when clicking close button
     closeBtn.addEventListener('click', closeLightbox);
@@ -73,13 +83,22 @@ function initializeLightbox() {
     lightboxImage.addEventListener('click', function(e) {
         e.stopPropagation(); // Prevent closing when clicking on image
     });
+    
+    console.log('Lightbox initialized successfully');
 }
 
 // Open lightbox with image
 function openLightbox(imageSrc, imageTitle) {
+    console.log('openLightbox called with:', imageSrc, imageTitle);
+    
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     const lightboxCaption = document.getElementById('lightbox-caption');
+    
+    if (!lightbox || !lightboxImage || !lightboxCaption) {
+        console.error('Lightbox elements not found:', { lightbox, lightboxImage, lightboxCaption });
+        return;
+    }
     
     // Show loading state
     lightboxImage.style.opacity = '0';
@@ -101,6 +120,8 @@ function openLightbox(imageSrc, imageTitle) {
         this.style.transition = 'opacity 0.3s ease';
         this.style.opacity = '1';
     };
+    
+    console.log('Lightbox opened successfully');
 }
 
 // Close lightbox
