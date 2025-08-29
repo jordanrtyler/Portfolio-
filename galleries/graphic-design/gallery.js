@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Gallery JavaScript loaded');
     initializeGalleryTabs();
     initializeLightbox();
+    initializeImageClicks();
     console.log('Gallery initialization complete');
 });
 
@@ -12,6 +13,23 @@ window.testLightbox = function() {
     console.log('Test function called');
     openLightbox('../../images/graphic-design/social-media/12.png', 'Test Image');
 };
+
+// Initialize direct image clicks
+function initializeImageClicks() {
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    
+    galleryImages.forEach(img => {
+        img.addEventListener('click', function() {
+            const imageSrc = this.src;
+            const imageAlt = this.alt;
+            console.log('Image clicked:', imageSrc, imageAlt);
+            openLightbox(imageSrc, imageAlt);
+        });
+        
+        // Make cursor pointer to indicate clickable
+        img.style.cursor = 'pointer';
+    });
+}
 
 // Category tab functionality
 function initializeGalleryTabs() {
