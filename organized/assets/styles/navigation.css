@@ -135,7 +135,7 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Mobile Navigation */
+/* Enhanced Mobile Navigation */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -152,9 +152,71 @@
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        z-index: 1000;
     }
 
     .nav-menu.active {
         left: 0;
+    }
+    
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+    
+    .nav-link {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Tablet Navigation */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav-menu {
+        gap: 1.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Mobile Navigation */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .nav-logo {
+        font-size: 1.5rem;
+    }
+    
+    .nav-menu {
+        top: 65px;
+        padding: 1.5rem 0;
+    }
+    
+    .nav-link {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Touch device navigation optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .nav-link {
+        padding: 1rem 1.5rem;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hamburger {
+        padding: 12px;
+        min-height: 44px;
+        min-width: 44px;
     }
 }

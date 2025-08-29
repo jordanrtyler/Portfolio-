@@ -202,7 +202,7 @@ body {
     background: #1d4ed8;
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design */
 @media (max-width: 768px) {
     .section-title {
         font-size: 2rem;
@@ -216,6 +216,55 @@ body {
 @media (max-width: 480px) {
     .section-title {
         font-size: 1.75rem;
+    }
+    
+    .container {
+        padding: 0 12px;
+    }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+}
+
+/* Large desktop screens */
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 35px;
+    }
+}
+
+/* Standard desktop screens */
+@media (max-width: 1199px) and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+}
+
+/* Tablet screens */
+@media (max-width: 1023px) and (min-width: 769px) {
+    .container {
+        padding: 0 25px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .gallery-image:hover {
+        transform: none;
+    }
+    
+    .btn:hover {
+        transform: none;
     }
 }
 
