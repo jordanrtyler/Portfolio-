@@ -1,10 +1,18 @@
 // Gallery Page Functionality
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Gallery JavaScript loaded');
+    alert('Gallery JavaScript is working!');
     initializeGalleryTabs();
     initializeLightbox();
     console.log('Gallery initialization complete');
 });
+
+// Make openLightbox globally available for testing
+window.openLightbox = openLightbox;
+window.testLightbox = function() {
+    console.log('Test function called');
+    openLightbox('../../images/graphic-design/social-media/12.png', 'Test Image');
+};
 
 // Category tab functionality
 function initializeGalleryTabs() {
