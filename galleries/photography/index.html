@@ -44,41 +44,29 @@
     </nav>
 
     <!-- Header -->
-    <header class="gallery-header">
+    <header class="page-header portfolio-header">
         <div class="container">
             <h1>Photography Portfolio</h1>
             <p>Capturing moments, emotions, and stories through the lens</p>
-            <div class="gallery-stats">
-                <div class="stat">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Images</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Categories</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Quality</span>
-                </div>
-            </div>
         </div>
     </header>
 
-    <!-- Category Tabs -->
-    <div class="category-tabs">
-        <div class="container">
-            <button class="category-tab active" data-category="all">All Photos</button>
-            <button class="category-tab" data-category="nature">Nature</button>
-            <button class="category-tab" data-category="portrait">Portrait</button>
-            <button class="category-tab" data-category="storytelling">Documentary</button>
-        </div>
-    </div>
-
     <!-- Main Gallery -->
-    <main class="gallery-main">
+    <main class="portfolio-main">
         <div class="container">
-            <div class="gallery-grid" id="gallery-grid">
+            <!-- Category Tabs -->
+            <div class="gallery-categories">
+                <div class="container">
+                    <button class="category-tab active" data-category="all">All Photos</button>
+                    <button class="category-tab" data-category="nature">Nature</button>
+                    <button class="category-tab" data-category="portrait">Portrait</button>
+                    <button class="category-tab" data-category="storytelling">Documentary</button>
+                </div>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="portfolio-section">
+                <div class="portfolio-grid" id="gallery-grid">
                 <!-- Nature Category -->
                 <div class="gallery-item" data-category="nature">
                     <div class="gallery-image-container">
