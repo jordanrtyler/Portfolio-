@@ -213,8 +213,9 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 20px var(--shadow-light);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
+    border: 2px solid transparent;
 }
 
 .gallery-item::before {
@@ -232,18 +233,10 @@
     pointer-events: none;
 }
 
-.gallery-item::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color), var(--secondary-color));
-    border-radius: 22px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
+.gallery-item:hover {
+    border-color: #667eea;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
 }
 
 
