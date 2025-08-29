@@ -161,6 +161,15 @@
     justify-content: center;
 }
 
+/* Center case study buttons */
+.portfolio-content .btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+}
+
 /* Featured Categories */
 .featured-categories {
     grid-template-columns: repeat(2, 1fr);
