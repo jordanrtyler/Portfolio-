@@ -1,7 +1,6 @@
 // Gallery Page Functionality
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Gallery JavaScript loaded');
-    alert('Gallery JavaScript is working!');
     initializeGalleryTabs();
     initializeLightbox();
     console.log('Gallery initialization complete');
