@@ -69,9 +69,6 @@
     border-radius: 12px;
     position: relative;
     overflow: hidden;
-    border: 2px solid transparent;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -93,20 +90,13 @@
 }
 
 .nav-link:hover {
-    color: white;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-color: var(--primary-color);
+    color: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .nav-link.active {
-    color: white;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 700;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
-    transform: translateY(-1px);
 }
 
 .hamburger {
@@ -167,8 +157,6 @@
     
     .nav-menu .nav-link {
         margin: 0.5rem 1rem;
-        background: rgba(255, 255, 255, 0.9);
-        border: 2px solid rgba(59, 130, 246, 0.2);
     }
 
     .nav-menu.active {
