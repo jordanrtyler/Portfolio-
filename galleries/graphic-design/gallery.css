@@ -248,17 +248,7 @@
 
 
 
-.gallery-item:hover {
-    transform: translateY(-5px);
-}
 
-.gallery-item:hover::before {
-    opacity: 1;
-}
-
-.gallery-item:hover::after {
-    opacity: 1;
-}
 
 .gallery-image-container {
     height: 250px;
@@ -293,11 +283,6 @@
     max-height: 100%;
 }
 
-.gallery-item:hover .gallery-image {
-    transform: scale(1.08);
-    filter: brightness(1.05);
-}
-
 .gallery-overlay {
     position: absolute;
     top: 0;
@@ -314,10 +299,6 @@
     padding: 2rem;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
 }
 
 .view-full-btn {
