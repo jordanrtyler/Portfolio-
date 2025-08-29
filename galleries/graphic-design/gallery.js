@@ -1,18 +1,12 @@
 // Gallery Page Functionality
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Gallery JavaScript loaded');
     initializeGalleryTabs();
     initializeLightbox();
     initializeImageClicks();
-    console.log('Gallery initialization complete');
 });
 
 // Make openLightbox globally available for testing
 window.openLightbox = openLightbox;
-window.testLightbox = function() {
-    console.log('Test function called');
-    openLightbox('../../images/graphic-design/social-media/12.png', 'Test Image');
-};
 
 // Initialize direct image clicks
 function initializeImageClicks() {
@@ -22,7 +16,6 @@ function initializeImageClicks() {
         img.addEventListener('click', function() {
             const imageSrc = this.src;
             const imageAlt = this.alt;
-            console.log('Image clicked:', imageSrc, imageAlt);
             openLightbox(imageSrc, imageAlt);
         });
         
@@ -75,15 +68,11 @@ function filterGalleryItems(category) {
 
 // Lightbox functionality
 function initializeLightbox() {
-    console.log('Initializing lightbox...');
     const lightbox = document.getElementById('lightbox');
     const closeBtn = document.querySelector('.close-lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     
-    console.log('Lightbox elements found:', { lightbox, closeBtn, lightboxImage });
-    
     if (!lightbox || !closeBtn || !lightboxImage) {
-        console.error('Missing lightbox elements');
         return;
     }
     
@@ -109,19 +98,16 @@ function initializeLightbox() {
         e.stopPropagation(); // Prevent closing when clicking on image
     });
     
-    console.log('Lightbox initialized successfully');
+
 }
 
 // Open lightbox with image
 function openLightbox(imageSrc, imageTitle) {
-    console.log('openLightbox called with:', imageSrc, imageTitle);
-    
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     const lightboxCaption = document.getElementById('lightbox-caption');
     
     if (!lightbox || !lightboxImage || !lightboxCaption) {
-        console.error('Lightbox elements not found:', { lightbox, lightboxImage, lightboxCaption });
         return;
     }
     
@@ -146,7 +132,7 @@ function openLightbox(imageSrc, imageTitle) {
         this.style.opacity = '1';
     };
     
-    console.log('Lightbox opened successfully');
+
 }
 
 // Close lightbox

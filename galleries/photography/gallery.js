@@ -13,7 +13,6 @@ function initializeImageClicks() {
         img.addEventListener('click', function() {
             const imageSrc = this.src;
             const imageAlt = this.alt;
-            console.log('Image clicked:', imageSrc, imageAlt);
             openLightbox(imageSrc, imageAlt);
         });
         
