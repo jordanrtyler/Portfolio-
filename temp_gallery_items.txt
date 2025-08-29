@@ -1,0 +1,701 @@
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/hayden-creek-3.jpg" alt="Hayden Creek flowing water" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/hayden-creek-3.jpg', 'Hayden Creek Flowing Water')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Hayden Creek</h3>
+                        <p>Serene flowing water in natural landscape</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Water</span>
+                            <span>Landscape</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/IMG_2330.jpeg" alt="Natural landscape photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/IMG_2330.jpeg', 'Natural Landscape')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Landscape</h3>
+                        <p>Beautiful outdoor scenery</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Outdoors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/5028712817_369fcec6b7_b-1.jpg" alt="Nature photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/5028712817_369fcec6b7_b-1.jpg', 'Nature Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Scene</h3>
+                        <p>Captivating natural environment</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Environment</span>
+                            <span>Outdoors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_82825b6cfa73493a97c38ebc769567cb~mv2.jpeg.avif" alt="Nature detail photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_82825b6cfa73493a97c38ebc769567cb~mv2.jpeg.avif', 'Nature Detail')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Detail</h3>
+                        <p>Intricate natural patterns</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Detail</span>
+                            <span>Patterns</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_0a29ae698dda43d8be341fbba8216577~mv2.jpeg.avif" alt="Natural texture photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_0a29ae698dda43d8be341fbba8216577~mv2.jpeg.avif', 'Natural Texture')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Texture</h3>
+                        <p>Rich surface details in nature</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Texture</span>
+                            <span>Detail</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_514f8227f0204aff87ed6c285d478235~mv2.jpeg.avif" alt="Landscape photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_514f8227f0204aff87ed6c285d478235~mv2.jpeg.avif', 'Landscape View')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Landscape View</h3>
+                        <p>Expansive natural scenery</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Scenery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_02df127aa5574a8ebec071f77722c06b~mv2.jpeg.avif" alt="Nature photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_02df127aa5574a8ebec071f77722c06b~mv2.jpeg.avif', 'Natural Beauty')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Beauty</h3>
+                        <p>Stunning natural composition</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Beauty</span>
+                            <span>Composition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_8a3fe441fd984458a14195941dbdfb73~mv2.jpg.avif" alt="Nature scene" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_8a3fe441fd984458a14195941dbdfb73~mv2.jpg.avif', 'Nature Scene')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Scene</h3>
+                        <p>Captivating outdoor environment</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Outdoors</span>
+                            <span>Environment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_994f772caa504c9fbddeed9c936d2bc4~mv2.jpeg.avif" alt="Natural landscape" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_994f772caa504c9fbddeed9c936d2bc4~mv2.jpeg.avif', 'Natural Landscape')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Landscape</h3>
+                        <p>Beautiful natural surroundings</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Natural</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_3f4fb1b4217148b7abae4ab63237e5f9~mv2.jpeg.avif" alt="Nature detail" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_3f4fb1b4217148b7abae4ab63237e5f9~mv2.jpeg.avif', 'Nature Detail')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Detail</h3>
+                        <p>Intricate natural elements</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Detail</span>
+                            <span>Elements</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_83fa8768153f4eab8166fc03506ffdac~mv2.jpg.avif" alt="Natural environment" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_83fa8768153f4eab8166fc03506ffdac~mv2.jpg.avif', 'Natural Environment')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Environment</h3>
+                        <p>Rich natural habitat</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Environment</span>
+                            <span>Habitat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_04bfe3456d35480c969847aa6dc3ccf6~mv2.jpeg.avif" alt="Nature photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_04bfe3456d35480c969847aa6dc3ccf6~mv2.jpeg.avif', 'Nature Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Photography</h3>
+                        <p>Capturing natural beauty</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Photography</span>
+                            <span>Beauty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_998d2d504a6e4570a186e981a6c4a9b1~mv2.jpg.avif" alt="Natural scene" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_998d2d504a6e4570a186e981a6c4a9b1~mv2.jpg.avif', 'Natural Scene')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Scene</h3>
+                        <p>Serene natural setting</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Scene</span>
+                            <span>Serene</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_e6feeeb5214647639839f87f7ee2d7ba~mv2.jpeg.avif" alt="Nature detail" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_e6feeeb5214647639839f87f7ee2d7ba~mv2.jpeg.avif', 'Nature Detail')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Detail</h3>
+                        <p>Fine natural elements</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Detail</span>
+                            <span>Elements</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_d626a07de9f0490baf8f390e03ebaeb6~mv2.jpeg.avif" alt="Natural landscape" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_d626a07de9f0490baf8f390e03ebaeb6~mv2.jpeg.avif', 'Natural Landscape')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Landscape</h3>
+                        <p>Expansive natural view</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Expansive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_2d656f8349fe4dd7953125bfeccb95d4~mv2.jpeg.avif" alt="Nature photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_2d656f8349fe4dd7953125bfeccb95d4~mv2.jpeg.avif', 'Nature Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Photography</h3>
+                        <p>Capturing natural moments</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Photography</span>
+                            <span>Moments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_5d3d69fb75844bf6a7d7f22ba66ac0e3~mv2.jpg.avif" alt="Natural scene" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_5d3d69fb75844bf6a7d7f22ba66ac0e3~mv2.jpg.avif', 'Natural Scene')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Scene</h3>
+                        <p>Beautiful natural composition</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Scene</span>
+                            <span>Composition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_358d05e88b76455184a78f41db334185~mv2.jpeg.avif" alt="Nature detail" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_358d05e88b76455184a78f41db334185~mv2.jpeg.avif', 'Nature Detail')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Detail</h3>
+                        <p>Intricate natural patterns</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Detail</span>
+                            <span>Patterns</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_53036243c85349729e9b721b05d972c2~mv2.jpeg.avif" alt="Natural texture" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_53036243c85349729e9b721b05d972c2~mv2.jpeg.avif', 'Natural Texture')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Texture</h3>
+                        <p>Rich surface details</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Texture</span>
+                            <span>Surface</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_95c95ce0618c446ba285d4a14b85f456~mv2.jpg.avif" alt="Natural landscape" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_95c95ce0618c446ba285d4a14b85f456~mv2.jpg.avif', 'Natural Landscape')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Landscape</h3>
+                        <p>Stunning natural view</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Stunning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_ac2f0e4dcb1d42acb961c38568f35490~mv2.jpeg.avif" alt="Nature scene" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_ac2f0e4dcb1d42acb961c38568f35490~mv2.jpeg.avif', 'Nature Scene')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Scene</h3>
+                        <p>Captivating natural environment</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Scene</span>
+                            <span>Environment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_6cc289b4ff2743cdbcd4a0af3437f49e~mv2-1.jpg.avif" alt="Nature photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_6cc289b4ff2743cdbcd4a0af3437f49e~mv2-1.jpg.avif', 'Nature Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nature Photography</h3>
+                        <p>Beautiful natural moments</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Photography</span>
+                            <span>Moments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_d76b3a97fea3477b9169cdcc2e4da204~mv2.jpeg.avif" alt="Natural detail" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_d76b3a97fea3477b9169cdcc2e4da204~mv2.jpeg.avif', 'Natural Detail')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Detail</h3>
+                        <p>Fine natural elements</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Detail</span>
+                            <span>Elements</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/cbfd94_65c3bd52e73244d692ac14ff2ddc5763~mv2.jpeg.avif" alt="Natural landscape" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/cbfd94_65c3bd52e73244d692ac14ff2ddc5763~mv2.jpeg.avif', 'Natural Landscape')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Natural Landscape</h3>
+                        <p>Expansive natural beauty</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Landscape</span>
+                            <span>Beauty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait Category -->
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/IMG_7204.jpeg" alt="Portrait Photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/IMG_7204.jpeg', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Relaxed Portrait</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Relaxed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/cbfd94_4e1b11b74a504f1b88c87f0cc873234d~mv2.jpeg.avif" alt="Portrait Photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/cbfd94_4e1b11b74a504f1b88c87f0cc873234d~mv2.jpeg.avif', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/cbfd94_ce9e0d49107744eeb63d0797bb275776~mv2.jpg.avif" alt="Portrait Photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/cbfd94_ce9e0d49107744eeb63d0797bb275776~mv2.jpg.avif', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Expressive human portrait</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Expressive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/cbfd94_22206da4fb0846b89242d61445d5d8ba~mv2.jpg.avif" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/cbfd94_22206da4fb0846b89242d61445d5d8ba~mv2.jpg.avif', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/cbfd94_22779b29389140c7921aa589a402a03b~mv2.jpg.avif" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/cbfd94_22779b29389140c7921aa589a402a03b~mv2.jpg.avif', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/cbfd94_2d656f8349fe4dd7953125bfeccb95d4~mv2.jpeg.avif" alt="Portrait Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/cbfd94_2d656f8349fe4dd7953125bfeccb95d4~mv2.jpeg.avif', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Capturing human emotion</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>People</span>
+                            <span>Emotion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storytelling Category -->
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Documentry/pieces-of-a-puzzle.jpg" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Documentry/pieces-of-a-puzzle.jpg', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Pieces of a Puzzle</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Documentry/cbfd94_ce9e0d49107744eeb63d0797bb275776~mv2.jpg.avif" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Documentry/cbfd94_ce9e0d49107744eeb63d0797bb275776~mv2.jpg.avif', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Storytelling Photography</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Documentry/cbfd94_77c1d965ebbd41e4a5d0553b76a7cf9e~mv2.jpg.avif" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Documentry/cbfd94_77c1d965ebbd41e4a5d0553b76a7cf9e~mv2.jpg.avif', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Storytelling Photography</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Documentry/cbfd94_cbb18b1c2b79490cb04d493eb60a307d~mv2.jpg.avif" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Documentry/cbfd94_cbb18b1c2b79490cb04d493eb60a307d~mv2.jpg.avif', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Storytelling Photography</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Documentry/cbfd94_d676f067bdc949a9870569b502699bb8~mv2.jpg.avif" alt="Storytelling Photography" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Documentry/cbfd94_d676f067bdc949a9870569b502699bb8~mv2.jpg.avif', 'Storytelling Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Storytelling Photography</h3>
+                        <p>Conceptual storytelling</p>
+                        <div class="gallery-tags">
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                            <span>Narrative</span>
+                        </div>
+                    </div>
+                </div>

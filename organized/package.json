@@ -1,0 +1,32 @@
+{
+  "name": "digital-marketing-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive digital marketing portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000",
+    "build": "node build.js",
+    "vercel-build": "node build.js",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "digital-marketing",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1",
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-repository-url"
+  },
+  "homepage": "your-portfolio-url"
+}

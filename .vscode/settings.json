@@ -1,0 +1,19 @@
+{
+  "git.autoStage": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 180,
+  "git.autoStash": true,
+  "git.showPushSuccessNotification": true,
+  "git.enableCommitSigning": false,
+  "git.ignoreLimitWarning": true,
+  "git.ignoreSubmodules": false,
+  "git.rememberPostCommitCommand": "sync",
+  "git.postCommitCommand": "sync",
+  "git.showActionButton": {
+    "commit": true,
+    "publish": true,
+    "sync": true
+  }
+}
