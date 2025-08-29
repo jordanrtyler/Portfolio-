@@ -231,7 +231,7 @@
     object-position: center;
     -webkit-image-smoothing: high-quality !important;
     -moz-image-smoothing: high-quality !important;
-    image-smoothing: high-quality !important;
+    image-rendering: high-quality !important;
     /* Smooth scaling */
     transform-origin: center center;
     backface-visibility: hidden;
@@ -371,7 +371,7 @@
     image-rendering: auto !important;
     -webkit-image-smoothing: high-quality !important;
     -moz-image-smoothing: high-quality !important;
-    image-smoothing: high-quality !important;
+    image-rendering: high-quality !important;
 }
 
 .lightbox-caption {

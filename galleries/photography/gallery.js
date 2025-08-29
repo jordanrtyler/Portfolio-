@@ -91,10 +91,10 @@ function initializeLightbox() {
 function openLightbox(imageSrc, imageTitle) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
-    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxCaption = document.getElementById('lightbox-caption');
     
     lightboxImage.src = imageSrc;
-    lightboxTitle.textContent = imageTitle;
+    lightboxCaption.textContent = imageTitle;
     
     lightbox.style.display = 'block';
     document.body.style.overflow = 'hidden'; // Prevent scrolling

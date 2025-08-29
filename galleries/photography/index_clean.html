@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Portfolio - Jordan Tyler</title>
+    <meta name="description" content="Explore Jordan Tyler's graphic design portfolio featuring social media graphics and design work.">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/navigation.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html">JT</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header portfolio-header">
+        <div class="container">
+            <h1>Photography Portfolio</h1>
+            <p>Capturing moments, emotions, and stories through the lens</p>
+        </div>
+    </header>
+
+    <!-- Main Gallery -->
+    <main class="portfolio-main">
+        <div class="container">
+            <!-- Category Tabs -->
+            <div class="gallery-categories">
+                <div class="container">
+                    <button class="category-tab active" data-category="all">All Photos</button>
+                    <button class="category-tab" data-category="nature">Nature</button>
+                    <button class="category-tab" data-category="portrait">Portrait</button>
+                    <button class="category-tab" data-category="storytelling">Documentary</button>
+                </div>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="portfolio-section">
+                <div class="portfolio-grid" id="gallery-grid">
+                <!-- Nature Category -->
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/nature/hayden-creek-3.jpg" alt="Hayden Creek flowing water" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/nature/hayden-creek-3.jpg', 'Hayden Creek Flowing Water')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Hayden Creek</h3>
+                        <p>Serene flowing water in natural landscape</p>
+                        <div class="gallery-tags">
+                            <span>Nature</span>
+                            <span>Water</span>
+                            <span>Landscape</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait Category -->
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/portrait/IMG_7204.jpeg" alt="Portrait Photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/portrait/IMG_7204.jpeg', 'Portrait Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Portrait Photography</h3>
+                        <p>Professional portrait work</p>
+                        <div class="gallery-tags">
+                            <span>Portrait</span>
+                            <span>Professional</span>
+                            <span>People</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documentary Category -->
+                <div class="gallery-item" data-category="storytelling">
+                    <div class="gallery-image-container">
+                        <img src="../../images/photography/Documentry/pieces-of-a-puzzle.jpg" alt="Documentary Photography" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="view-full-btn" onclick="openLightbox('../../images/photography/Documentry/pieces-of-a-puzzle.jpg', 'Documentary Photography')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Documentary Photography</h3>
+                        <p>Storytelling through images</p>
+                        <div class="gallery-tags">
+                            <span>Documentary</span>
+                            <span>Storytelling</span>
+                            <span>Conceptual</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Social Media Category -->
+                <div class="gallery-item" data-category="social-media">
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jordan Tyler</h3>
+                    <p>Digital Marketing Specialist helping businesses grow their online presence through strategic marketing solutions.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../../services.html">Social Media Marketing</a></li>
+                        <li><a href="../../services.html">SEO Optimization</a></li>
+                        <li><a href="../../services.html">Graphic Design</a></li>
+                        <li><a href="../../services.html">Photography</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../about.html">About</a></li>
+                        <li><a href="../../services.html">Services</a></li>
+                        <li><a href="../../portfolio.html">Portfolio</a></li>
+                        <li><a href="../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/jordan-tyler18"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/jordanrtyler"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/jordan.tyler.007/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jordan Tyler. All rights reserved.</p>
+                <a href="../../portfolio.html" class="back-home">← Back to Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
