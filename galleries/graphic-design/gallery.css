@@ -244,13 +244,9 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: -1;
-    animation: borderGlow 3s ease-in-out infinite;
 }
 
-@keyframes borderGlow {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 0.3; }
-}
+
 
 .gallery-item:hover {
     transform: translateY(-5px);
