@@ -1,5 +1,20 @@
 /* Multi-Page Layout Styles */
 
+/* Prevent horizontal overflow on all devices */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Hero Section */
 .hero {
     padding: clamp(80px, 10vw, 140px) 0 clamp(60px, 8vw, 100px);
@@ -2034,9 +2049,22 @@
         text-align: center;
     }
     
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
     .about-image img {
         width: 300px;
         height: 300px;
+        margin: 0 auto;
+    }
+    
+    .profile-card {
+        margin: 0 auto;
+        max-width: 400px;
     }
     
     .expertise-grid,
@@ -2078,6 +2106,28 @@
 @media (max-width: 767px) and (min-width: 481px) {
     .container {
         padding: 0 20px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Prevent grid overflow on tablets */
+    .expertise-grid,
+    .values-grid,
+    .services-grid,
+    .categories-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        max-width: 100%;
+    }
+    
+    /* Ensure cards don't overflow */
+    .expertise-item,
+    .value-item,
+    .service-card,
+    .category-card {
+        min-width: 0;
+        max-width: 100%;
+        word-wrap: break-word;
     }
     
     .page-header {
@@ -2106,9 +2156,22 @@
         text-align: center;
     }
     
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
     .about-image img {
         width: 280px;
         height: 280px;
+        margin: 0 auto;
+    }
+    
+    .profile-card {
+        margin: 0 auto;
+        max-width: 350px;
     }
     
     .expertise-grid,
@@ -2171,6 +2234,33 @@
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Fix grid layouts that might cause overflow */
+    .expertise-grid,
+    .values-grid,
+    .services-grid,
+    .categories-grid,
+    .contact-methods,
+    .testimonials-grid,
+    .process-timeline {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+        max-width: 100%;
+    }
+    
+    /* Ensure all cards fit within viewport */
+    .expertise-item,
+    .value-item,
+    .service-card,
+    .category-card,
+    .contact-method,
+    .testimonial-item {
+        min-width: 0;
+        max-width: 100%;
+        word-wrap: break-word;
     }
     
     .page-header {
@@ -2199,9 +2289,22 @@
         text-align: center;
     }
     
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
     .about-image img {
         width: 250px;
         height: 250px;
+        margin: 0 auto;
+    }
+    
+    .profile-card {
+        margin: 0 auto;
+        max-width: 320px;
     }
     
     .expertise-grid,
@@ -2298,6 +2401,40 @@
 @media (max-width: 375px) {
     .container {
         padding: 0 12px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Force single column layouts to prevent overflow */
+    .expertise-grid,
+    .values-grid,
+    .services-grid,
+    .categories-grid,
+    .contact-methods,
+    .testimonials-grid,
+    .process-timeline {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+        max-width: 100%;
+    }
+    
+    /* Ensure text doesn't overflow */
+    .expertise-item,
+    .value-item,
+    .service-card,
+    .category-card,
+    .contact-method,
+    .testimonial-item {
+        min-width: 0;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    /* Fix any remaining overflow issues */
+    .card-metrics {
+        grid-template-columns: 1fr !important;
+        gap: 8px;
     }
     
     .page-header {
@@ -2320,9 +2457,22 @@
         font-size: 0.9rem;
     }
     
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
     .about-image img {
         width: 220px;
         height: 220px;
+        margin: 0 auto;
+    }
+    
+    .profile-card {
+        margin: 0 auto;
+        max-width: 280px;
     }
     
     .expertise-item,
@@ -2708,6 +2858,8 @@
     .footer-content {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2.5rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
@@ -2990,6 +3142,8 @@
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .nav-menu.active {
@@ -3000,6 +3154,21 @@
         grid-template-columns: 1fr;
         text-align: center;
         gap: clamp(1.5rem, 4vw, 2.5rem);
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 0 15px;
+    }
+    
+    /* Prevent hero content from overflowing */
+    .hero-content {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .hero-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
     }
 
     .hero-title {
@@ -3589,6 +3758,8 @@
     .side-by-side-galleries {
         grid-template-columns: 1fr;
         gap: 40px;
+        margin: 0 auto;
+        max-width: 100%;
     }
     
     .side-by-side-galleries::before {
@@ -3597,6 +3768,11 @@
     
     .side-by-side-galleries::after {
         display: none;
+    }
+    
+    .gallery-column {
+        width: 100%;
+        max-width: 100%;
     }
     
     .gallery-title {
@@ -3674,11 +3850,20 @@
     .side-by-side-galleries {
         grid-template-columns: 1fr;
         gap: 30px;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0 10px;
     }
     
     .side-by-side-galleries::before,
     .side-by-side-galleries::after {
         display: none;
+    }
+    
+    .gallery-column {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
     
     .gallery-header {
@@ -3796,6 +3981,16 @@
 
 /* Small mobile devices (320px - 375px) */
 @media (max-width: 375px) {
+    .side-by-side-galleries {
+        padding: 0 5px;
+        gap: 25px;
+    }
+    
+    .gallery-column {
+        width: 100%;
+        max-width: 100%;
+    }
+    
     .gallery-title {
         font-size: 1.6rem;
     }
@@ -3897,5 +4092,34 @@
     
     .gallery-caption {
         padding: 10px;
+    }
+}
+
+/* Universal overflow prevention for all screen sizes */
+@media (max-width: 1024px) {
+    .hero-container,
+    .about-content,
+    .contact-content,
+    .services-grid,
+    .expertise-grid,
+    .values-grid,
+    .categories-grid,
+    .portfolio-showcase,
+    .side-by-side-galleries {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Ensure all text content wraps properly */
+    h1, h2, h3, h4, h5, h6, p, span, div {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    /* Prevent images from causing overflow */
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
