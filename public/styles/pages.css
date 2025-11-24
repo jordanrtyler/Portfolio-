@@ -3,6 +3,16 @@
 /* Prevent horizontal overflow on all devices */
 * {
     box-sizing: border-box;
+    max-width: 100vw;
+    /* Hide scrollbars on all elements */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 /* Ensure all sections prevent overflow */
@@ -10,25 +20,40 @@ section {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
+    max-width: min(100%, 100vw);
     position: relative;
 }
 
 html, body {
-    overflow-x: hidden;
-    max-width: 100%;
-    width: 100%;
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
     position: relative;
+    /* Hide scrollbars */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 body {
     overflow-x: hidden !important;
+    max-width: 100vw !important;
 }
 
 .container {
-    max-width: 100%;
+    max-width: min(100%, 100vw);
     overflow-x: hidden;
     width: 100%;
     position: relative;
+    padding-left: clamp(15px, 3vw, 20px);
+    padding-right: clamp(15px, 3vw, 20px);
+    box-sizing: border-box;
 }
 
 /* Hero Section */
@@ -76,7 +101,7 @@ body {
 }
 
 .hero-container {
-    max-width: min(1200px, 90vw);
+    max-width: min(1200px, calc(100vw - 40px));
     margin: 0 auto;
     padding: 0 clamp(20px, 3vw, 40px);
     display: grid;
@@ -86,7 +111,6 @@ body {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 100%;
     overflow-x: hidden;
     overflow-y: visible;
     box-sizing: border-box;
@@ -511,8 +535,10 @@ body {
 /* Expertise Grid */
 .expertise-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 30px;
+    max-width: 100%;
+    overflow-x: hidden;
     margin-top: 40px;
 }
 
@@ -584,8 +610,10 @@ body {
 /* Values Grid */
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 30px;
+    max-width: 100%;
+    overflow-x: hidden;
     margin-top: 40px;
 }
 
@@ -652,7 +680,7 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: 2rem;
 }
 
@@ -819,7 +847,7 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -973,7 +1001,7 @@ body {
 /* Process Steps */
 .process-steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -1117,7 +1145,7 @@ body {
 /* Metrics Display */
 .card-metrics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
     gap: 15px;
     margin-bottom: 20px;
 }
@@ -1236,7 +1264,7 @@ body {
 
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -1429,7 +1457,7 @@ body {
 /* Category Grid */
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -1479,7 +1507,7 @@ body {
 /* Process Timeline */
 .process-timeline {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -1505,7 +1533,7 @@ body {
 /* Testimonials */
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -1653,7 +1681,7 @@ body {
 /* Contact Methods */
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -2676,7 +2704,7 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: clamp(1rem, 2vw, 1.5rem);
     margin-bottom: clamp(1rem, 2vw, 1.5rem);
     position: relative;
@@ -3491,6 +3519,11 @@ body {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    /* Disable scrolling */
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .image-container::before {
@@ -4326,10 +4359,11 @@ body {
         hyphens: auto;
     }
     
-    /* Prevent images from causing overflow */
+    /* Prevent images from causing horizontal overflow only */
     img {
         max-width: 100%;
         height: auto;
+        overflow-x: hidden;
     }
 }
 
@@ -4338,11 +4372,54 @@ body {
     html, body {
         overflow-x: hidden !important;
         width: 100% !important;
+        max-width: 100vw !important;
         position: relative;
     }
     
     * {
-        max-width: 100%;
+        max-width: 100vw !important;
+    }
+    
+    /* Ensure all containers are constrained and don't scroll */
+    .container,
+    section,
+    div,
+    article,
+    aside,
+    header,
+    footer,
+    main {
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        -ms-overflow-style: none !important;
+        scrollbar-width: none !important;
+    }
+    
+    /* Hide scrollbars on all elements */
+    .container::-webkit-scrollbar,
+    section::-webkit-scrollbar,
+    div::-webkit-scrollbar,
+    article::-webkit-scrollbar,
+    aside::-webkit-scrollbar,
+    header::-webkit-scrollbar,
+    footer::-webkit-scrollbar,
+    main::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+    
+    img, video, iframe, embed, object {
+        max-width: 100% !important;
+        height: auto;
+    }
+    
+    /* Fix any grid that might overflow */
+    [class*="grid"],
+    [class*="Grid"] {
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
     }
     
     .hero {
