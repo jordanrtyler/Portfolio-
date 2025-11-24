@@ -5,14 +5,30 @@
     box-sizing: border-box;
 }
 
+/* Ensure all sections prevent overflow */
+section {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
 html, body {
     overflow-x: hidden;
     max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden !important;
 }
 
 .container {
     max-width: 100%;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 /* Hero Section */
@@ -24,6 +40,11 @@ html, body {
     display: flex;
     align-items: center;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+    width: 100%;
+    max-width: 100%;
+    contain: layout style;
 }
 
 .hero::before {
@@ -48,6 +69,10 @@ html, body {
     border-radius: 50%;
     filter: blur(60px);
     animation: float 8s ease-in-out infinite;
+    pointer-events: none;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+    will-change: transform;
 }
 
 .hero-container {
@@ -60,6 +85,12 @@ html, body {
     align-items: center;
     position: relative;
     z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    box-sizing: border-box;
+    contain: layout;
 }
 
 /* Floating orbs for visual interest */
@@ -74,6 +105,10 @@ html, body {
     border-radius: 50%;
     animation: float 6s ease-in-out infinite reverse;
     z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+    will-change: transform;
 }
 
 .hero-container::after {
@@ -87,6 +122,10 @@ html, body {
     border-radius: 50%;
     animation: float 7s ease-in-out infinite;
     z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+    will-change: transform;
 }
 
 .hero-title {
@@ -2615,6 +2654,15 @@ html, body {
     100% { transform: rotate(360deg); }
 }
 
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-20px) rotate(2deg); 
+    }
+}
+
 @keyframes pulse {
     0%, 100% { 
         opacity: 1; 
@@ -4224,6 +4272,39 @@ html, body {
 
 /* Universal overflow prevention for all screen sizes */
 @media (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .hero {
+        overflow-x: hidden !important;
+        overflow-y: visible;
+        width: 100%;
+        max-width: 100%;
+        clip-path: inset(0 0 0 0);
+    }
+    
+    /* Constrain decorative elements on mobile without hiding */
+    .hero::after {
+        right: -30%;
+        width: 35%;
+        clip-path: inset(0 -50% 0 0);
+    }
+    
+    .hero-container::before {
+        left: -20%;
+        width: 120px;
+        clip-path: inset(0 0 0 -50%);
+    }
+    
+    .hero-container::after {
+        right: -30%;
+        width: 100px;
+        clip-path: inset(0 -50% 0 0);
+    }
+    
     .hero-container,
     .about-content,
     .contact-content,
@@ -4235,6 +4316,7 @@ html, body {
     .side-by-side-galleries {
         max-width: 100%;
         overflow-x: hidden;
+        width: 100%;
     }
     
     /* Ensure all text content wraps properly */
@@ -4248,5 +4330,78 @@ html, body {
     img {
         max-width: 100%;
         height: auto;
+    }
+}
+
+/* Mobile-specific overflow fixes */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        position: relative;
+    }
+    
+    * {
+        max-width: 100%;
+    }
+    
+    .hero {
+        clip-path: inset(0 0 0 0);
+        overflow-x: hidden !important;
+    }
+    
+    /* Clip decorative elements instead of hiding - keeps visual effect */
+    .hero::after {
+        clip-path: inset(0 -100% 0 0);
+        right: -40%;
+        width: 30%;
+    }
+    
+    .hero-container::before {
+        clip-path: inset(0 0 0 -100%);
+        left: -25%;
+        width: 100px;
+    }
+    
+    .hero-container::after {
+        clip-path: inset(0 -100% 0 0);
+        right: -40%;
+        width: 80px;
+    }
+    
+    section {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@media (max-width: 480px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
+    
+    .hero {
+        clip-path: inset(0 0 0 0);
+    }
+    
+    /* Further clip decorative elements on small screens */
+    .hero::after {
+        clip-path: inset(0 -150% 0 0);
+        right: -50%;
+        width: 25%;
+    }
+    
+    .hero-container::before {
+        clip-path: inset(0 0 0 -150%);
+        left: -30%;
+        width: 80px;
+    }
+    
+    .hero-container::after {
+        clip-path: inset(0 -150% 0 0);
+        right: -50%;
+        width: 60px;
     }
 }
