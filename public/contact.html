@@ -164,78 +164,209 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- Contact Form Handler -->
     <script>
-        (function(){
-            emailjs.init("fRYgNLPSGZoUt3YnC"); // Replace with your EmailJS Public Key
-        })();
+        // Initialize EmailJS after library loads
+        window.addEventListener('load', function() {
+            if (typeof emailjs !== 'undefined') {
+                try {
+                    emailjs.init("fRYgNLPSGZoUt3YnC"); // Your EmailJS Public Key
+                    console.log('✅ EmailJS initialized successfully');
+                    console.log('Public Key:', "fRYgNLPSGZoUt3YnC");
+                    
+                    // Make test function available globally for debugging
+                    window.testEmailJS = function() {
+                        console.log('🧪 Testing EmailJS...');
+                        const testParams = {
+                            from_name: 'Test User',
+                            from_email: 'test@example.com',
+                            company: 'Test Company',
+                            service: 'Test Service',
+                            message: 'This is a test message from the debug function',
+                            to_email: 'Jordanrtyler00@gmail.com'
+                        };
+                        
+                        emailjs.send('service_2fxt49o', 'template_kvyjuov', testParams)
+                            .then(function(response) {
+                                console.log('✅ Test SUCCESS!', response);
+                                alert('Test email sent successfully! Check your inbox.');
+                            }, function(error) {
+                                console.error('❌ Test FAILED!', error);
+                                console.error('Error Status:', error.status);
+                                console.error('Error Text:', error.text);
+                                alert('Test failed. Check console for details. Error: ' + (error.text || error.status));
+                            });
+                    };
+                    console.log('💡 Tip: Run testEmailJS() in console to test EmailJS');
+                } catch (error) {
+                    console.error('❌ EmailJS initialization error:', error);
+                }
+            } else {
+                console.error('❌ EmailJS library failed to load');
+                console.error('Check if the CDN link is accessible');
+            }
+        });
 
         // Contact Form Submission Handler
         document.addEventListener('DOMContentLoaded', function() {
             const contactForm = document.getElementById('contactForm');
             
             if (contactForm) {
+                console.log('✅ Contact form found and handler attached');
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
+                    console.log('📝 Form submitted!');
                     
-                    // Get form elements
-                    const submitBtn = contactForm.querySelector('.submit-btn');
-                    const btnText = submitBtn.querySelector('.btn-text');
-                    const btnLoading = submitBtn.querySelector('.btn-loading');
-                    
-                    // Get form data
-                    const formData = {
-                        name: document.getElementById('name').value,
-                        email: document.getElementById('email').value,
-                        company: document.getElementById('company').value || 'Not provided',
-                        service: document.getElementById('service').value || 'Not specified',
-                        message: document.getElementById('message').value
-                    };
-                    
-                    // Validate required fields
-                    if (!formData.name || !formData.email || !formData.message) {
-                        showNotification('Please fill in all required fields', 'error');
-                        return;
-                    }
-                    
-                    // Validate email format
-                    if (!isValidEmail(formData.email)) {
-                        showNotification('Please enter a valid email address', 'error');
-                        return;
-                    }
-                    
-                    // Show loading state
-                    submitBtn.disabled = true;
-                    btnText.style.display = 'none';
-                    btnLoading.style.display = 'inline';
-                    
-                    // Prepare email template parameters
-                    const templateParams = {
-                        from_name: formData.name,
-                        from_email: formData.email,
-                        company: formData.company,
-                        service: formData.service,
-                        message: formData.message,
-                        to_email: 'Jordanrtyler00@gmail.com'
-                    };
-                    emailjs.send('service_2fxt49o', 'template_kvyjuov', templateParams)
-                        .then(function(response) {
-                            console.log('SUCCESS!', response.status, response.text);
-                            showNotification('Thank you! Your message has been sent successfully. I\'ll get back to you soon!', 'success');
-                            contactForm.reset();
-                            
-                            // Reset button state
-                            submitBtn.disabled = false;
-                            btnText.style.display = 'inline';
-                            btnLoading.style.display = 'none';
-                        }, function(error) {
-                            console.log('FAILED...', error);
-                            showNotification('Sorry, there was an error sending your message. Please try again or contact me directly.', 'error');
-                            
-                            // Reset button state
-                            submitBtn.disabled = false;
-                            btnText.style.display = 'inline';
-                            btnLoading.style.display = 'none';
+                    try {
+                        // Get form elements
+                        const submitBtn = contactForm.querySelector('.submit-btn');
+                        const btnText = submitBtn.querySelector('.btn-text');
+                        const btnLoading = submitBtn.querySelector('.btn-loading');
+                        
+                        if (!submitBtn || !btnText || !btnLoading) {
+                            console.error('❌ Form button elements not found!');
+                            showNotification('Form error. Please refresh the page.', 'error');
+                            return;
+                        }
+                        
+                        // Get form data
+                        const nameEl = document.getElementById('name');
+                        const emailEl = document.getElementById('email');
+                        const companyEl = document.getElementById('company');
+                        const serviceEl = document.getElementById('service');
+                        const messageEl = document.getElementById('message');
+                        
+                        console.log('Form fields found:', {
+                            name: !!nameEl,
+                            email: !!emailEl,
+                            company: !!companyEl,
+                            service: !!serviceEl,
+                            message: !!messageEl
                         });
+                        
+                        const formData = {
+                            name: nameEl ? nameEl.value.trim() : '',
+                            email: emailEl ? emailEl.value.trim() : '',
+                            company: companyEl ? companyEl.value.trim() || 'Not provided' : 'Not provided',
+                            service: serviceEl ? serviceEl.value || 'Not specified' : 'Not specified',
+                            message: messageEl ? messageEl.value.trim() : ''
+                        };
+                        
+                        console.log('📋 Form data collected:', formData);
+                        
+                        // Validate required fields
+                        if (!formData.name || !formData.email || !formData.message) {
+                            console.warn('⚠️ Validation failed: Missing required fields');
+                            showNotification('Please fill in all required fields', 'error');
+                            return;
+                        }
+                        
+                        // Validate email format
+                        if (!isValidEmail(formData.email)) {
+                            console.warn('⚠️ Validation failed: Invalid email format');
+                            showNotification('Please enter a valid email address', 'error');
+                            return;
+                        }
+                        
+                        console.log('✅ Form validation passed');
+                        
+                        // Show loading state
+                        submitBtn.disabled = true;
+                        btnText.style.display = 'none';
+                        btnLoading.style.display = 'inline';
+                        
+                        // Prepare email template parameters
+                        const templateParams = {
+                            from_name: formData.name,
+                            from_email: formData.email,
+                            company: formData.company,
+                            service: formData.service,
+                            message: formData.message,
+                            to_email: 'Jordanrtyler00@gmail.com'
+                        };
+                        
+                        // Debug logging
+                        console.log('=== EmailJS Debug Info ===');
+                        console.log('EmailJS loaded:', typeof emailjs !== 'undefined');
+                        console.log('Public Key:', "fRYgNLPSGZoUt3YnC");
+                        console.log('Service ID:', 'service_2fxt49o');
+                        console.log('Template ID:', 'template_kvyjuov');
+                        console.log('Template Params:', templateParams);
+                        console.log('========================');
+                        
+                        // Check if EmailJS is loaded
+                        if (typeof emailjs === 'undefined') {
+                            console.error('❌ EmailJS library not loaded!');
+                            showNotification('Email service not available. Please refresh the page and try again.', 'error');
+                            submitBtn.disabled = false;
+                            btnText.style.display = 'inline';
+                            btnLoading.style.display = 'none';
+                            return;
+                        }
+                        
+                        // Verify EmailJS is initialized
+                        if (!emailjs || typeof emailjs.send !== 'function') {
+                            console.error('❌ EmailJS not properly initialized!');
+                            showNotification('Email service not initialized. Please refresh the page.', 'error');
+                            submitBtn.disabled = false;
+                            btnText.style.display = 'inline';
+                            btnLoading.style.display = 'none';
+                            return;
+                        }
+                        
+                        console.log('📧 Attempting to send email...');
+                        emailjs.send('service_2fxt49o', 'template_kvyjuov', templateParams)
+                            .then(function(response) {
+                                console.log('✅ SUCCESS!', response.status, response.text);
+                                showNotification('Thank you! Your message has been sent successfully. I\'ll get back to you soon!', 'success');
+                                contactForm.reset();
+                                
+                                // Reset button state
+                                submitBtn.disabled = false;
+                                btnText.style.display = 'inline';
+                                btnLoading.style.display = 'none';
+                            }, function(error) {
+                            console.error('EmailJS Error Details:', error);
+                            console.error('Error Status:', error.status);
+                            console.error('Error Text:', error.text);
+                            
+                            // More detailed error message
+                            let errorMessage = 'Sorry, there was an error sending your message. ';
+                            if (error.status === 400) {
+                                errorMessage += 'Invalid request. Please check your EmailJS configuration.';
+                            } else if (error.status === 401) {
+                                errorMessage += 'Authentication failed. Please check your Public Key.';
+                            } else if (error.status === 404) {
+                                errorMessage += 'Service or Template not found. Please verify your Service ID and Template ID.';
+                            } else if (error.text) {
+                                errorMessage += 'Error: ' + error.text;
+                            } else {
+                                errorMessage += 'Please try again or contact me directly.';
+                            }
+                            
+                            showNotification(errorMessage, 'error');
+                            
+                                // Reset button state
+                                submitBtn.disabled = false;
+                                btnText.style.display = 'inline';
+                                btnLoading.style.display = 'none';
+                            });
+                    } catch (error) {
+                        console.error('❌ Form submission error:', error);
+                        console.error('Error stack:', error.stack);
+                        showNotification('An error occurred. Please check the console for details.', 'error');
+                        
+                        // Reset button state if it exists
+                        const submitBtn = contactForm.querySelector('.submit-btn');
+                        if (submitBtn) {
+                            const btnText = submitBtn.querySelector('.btn-text');
+                            const btnLoading = submitBtn.querySelector('.btn-loading');
+                            if (btnText) btnText.style.display = 'inline';
+                            if (btnLoading) btnLoading.style.display = 'none';
+                            submitBtn.disabled = false;
+                        }
+                    }
                 });
+            } else {
+                console.error('❌ Contact form not found! Form ID: contactForm');
             }
             
             // Email validation function
