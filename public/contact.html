@@ -160,5 +160,178 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Contact Form Handler -->
+    <script>
+        (function(){
+            emailjs.init("fRYgNLPSGZoUt3YnC"); // Replace with your EmailJS Public Key
+        })();
+
+        // Contact Form Submission Handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form elements
+                    const submitBtn = contactForm.querySelector('.submit-btn');
+                    const btnText = submitBtn.querySelector('.btn-text');
+                    const btnLoading = submitBtn.querySelector('.btn-loading');
+                    
+                    // Get form data
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        company: document.getElementById('company').value || 'Not provided',
+                        service: document.getElementById('service').value || 'Not specified',
+                        message: document.getElementById('message').value
+                    };
+                    
+                    // Validate required fields
+                    if (!formData.name || !formData.email || !formData.message) {
+                        showNotification('Please fill in all required fields', 'error');
+                        return;
+                    }
+                    
+                    // Validate email format
+                    if (!isValidEmail(formData.email)) {
+                        showNotification('Please enter a valid email address', 'error');
+                        return;
+                    }
+                    
+                    // Show loading state
+                    submitBtn.disabled = true;
+                    btnText.style.display = 'none';
+                    btnLoading.style.display = 'inline';
+                    
+                    // Prepare email template parameters
+                    const templateParams = {
+                        from_name: formData.name,
+                        from_email: formData.email,
+                        company: formData.company,
+                        service: formData.service,
+                        message: formData.message,
+                        to_email: 'Jordanrtyler00@gmail.com'
+                    };
+                    emailjs.send('service_2fxt49o', 'template_kvyjuov', templateParams)
+                        .then(function(response) {
+                            console.log('SUCCESS!', response.status, response.text);
+                            showNotification('Thank you! Your message has been sent successfully. I\'ll get back to you soon!', 'success');
+                            contactForm.reset();
+                            
+                            // Reset button state
+                            submitBtn.disabled = false;
+                            btnText.style.display = 'inline';
+                            btnLoading.style.display = 'none';
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                            showNotification('Sorry, there was an error sending your message. Please try again or contact me directly.', 'error');
+                            
+                            // Reset button state
+                            submitBtn.disabled = false;
+                            btnText.style.display = 'inline';
+                            btnLoading.style.display = 'none';
+                        });
+                });
+            }
+            
+            // Email validation function
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+            
+            // Notification system
+            function showNotification(message, type = 'info') {
+                // Remove existing notifications
+                const existingNotification = document.querySelector('.notification');
+                if (existingNotification) {
+                    existingNotification.remove();
+                }
+                
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                notification.innerHTML = `
+                    <span class="notification-message">${message}</span>
+                    <button class="notification-close" onclick="this.parentElement.remove()">×</button>
+                `;
+                
+                // Add styles if not already present
+                if (!document.getElementById('notification-styles')) {
+                    const style = document.createElement('style');
+                    style.id = 'notification-styles';
+                    style.textContent = `
+                        .notification {
+                            position: fixed;
+                            top: 20px;
+                            right: 20px;
+                            padding: 15px 20px;
+                            border-radius: 8px;
+                            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                            z-index: 10000;
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            max-width: 400px;
+                            animation: slideIn 0.3s ease-out;
+                        }
+                        @keyframes slideIn {
+                            from {
+                                transform: translateX(100%);
+                                opacity: 0;
+                            }
+                            to {
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                        }
+                        .notification-success {
+                            background: #10b981;
+                            color: white;
+                        }
+                        .notification-error {
+                            background: #ef4444;
+                            color: white;
+                        }
+                        .notification-info {
+                            background: #3b82f6;
+                            color: white;
+                        }
+                        .notification-close {
+                            background: transparent;
+                            border: none;
+                            color: white;
+                            font-size: 20px;
+                            cursor: pointer;
+                            padding: 0;
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .notification-close:hover {
+                            opacity: 0.8;
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+                
+                // Append to body
+                document.body.appendChild(notification);
+                
+                // Auto-remove after 5 seconds
+                setTimeout(() => {
+                    if (notification.parentElement) {
+                        notification.remove();
+                    }
+                }, 5000);
+            }
+        });
+    </script>
 </body>
 </html>
