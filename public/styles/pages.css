@@ -3330,6 +3330,9 @@ html, body {
     gap: 60px;
     margin-bottom: 50px;
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .side-by-side-galleries::before {
@@ -3361,6 +3364,9 @@ html, body {
 .gallery-column {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .gallery-grid {
@@ -3379,6 +3385,9 @@ html, body {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(0, 0, 0, 0.05);
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .gallery-item::before {
@@ -3431,6 +3440,9 @@ html, body {
     position: relative;
     overflow: hidden;
     height: 250px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .image-container::before {
@@ -3453,10 +3465,12 @@ html, body {
 
 .gallery-image {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     filter: brightness(1) contrast(1.05) saturate(1.1);
+    display: block;
 }
 
 .gallery-item:hover .gallery-image {
@@ -3723,8 +3737,30 @@ html, body {
 
 /* Tablet landscape (768px - 1023px) */
 @media (max-width: 1023px) and (min-width: 768px) {
+    .portfolio {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
+    
     .side-by-side-galleries {
+        grid-template-columns: 1fr;
         gap: 50px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 0 20px;
+    }
+    
+    .side-by-side-galleries::before,
+    .side-by-side-galleries::after {
+        display: none;
+    }
+    
+    .gallery-column {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .gallery-title {
@@ -3737,6 +3773,14 @@ html, body {
     
     .image-container {
         height: 240px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
     
     .gallery-caption {
@@ -3751,15 +3795,29 @@ html, body {
         padding: 6px 10px;
         font-size: 0.8rem;
     }
+    
+    .gallery-item {
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
 
 /* Tablet portrait and large mobile (481px - 767px) */
 @media (max-width: 767px) and (min-width: 481px) {
+    .portfolio {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
+    
     .side-by-side-galleries {
         grid-template-columns: 1fr;
         gap: 40px;
         margin: 0 auto;
         max-width: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0 15px;
     }
     
     .side-by-side-galleries::before {
@@ -3773,6 +3831,23 @@ html, body {
     .gallery-column {
         width: 100%;
         max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .gallery-item {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .image-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
     
     .gallery-title {
@@ -3847,11 +3922,20 @@ html, body {
 
 /* Mobile portrait (320px - 480px) */
 @media (max-width: 480px) {
+    .portfolio {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+        padding: 60px 0;
+    }
+    
     .side-by-side-galleries {
         grid-template-columns: 1fr;
         gap: 30px;
         margin: 0 auto;
         max-width: 100%;
+        width: 100%;
+        overflow-x: hidden;
         padding: 0 10px;
     }
     
@@ -3864,6 +3948,23 @@ html, body {
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
+        overflow-x: hidden;
+    }
+    
+    .gallery-item {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .image-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
     
     .gallery-header {
@@ -3981,14 +4082,40 @@ html, body {
 
 /* Small mobile devices (320px - 375px) */
 @media (max-width: 375px) {
+    .portfolio {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
+    
     .side-by-side-galleries {
         padding: 0 5px;
         gap: 25px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .gallery-column {
         width: 100%;
         max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .gallery-item {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .image-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
     
     .gallery-title {
