@@ -203,9 +203,7 @@
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
     /* Prevent browser compression and ensure high quality */
-    -webkit-image-smoothing: high-quality !important;
-    -moz-image-smoothing: high-quality !important;
-    image-smoothing: high-quality !important;
+    image-rendering: auto !important;
     /* Smooth scaling */
     transform-origin: center center;
     backface-visibility: hidden;
@@ -351,9 +349,6 @@
     -moz-osx-font-smoothing: grayscale;
     /* Maximum quality for lightbox */
     image-rendering: auto !important;
-    -webkit-image-smoothing: high-quality !important;
-    -moz-image-smoothing: high-quality !important;
-    image-smoothing: high-quality !important;
 }
 
 .lightbox-caption {
@@ -388,9 +383,6 @@
 /* Ensure images maintain their natural quality */
 .gallery-image-container img {
     image-rendering: auto !important;
-    -webkit-image-smoothing: high-quality !important;
-    -moz-image-smoothing: high-quality !important;
-    image-smoothing: high-quality !important;
 }
 
 /* Prevent browser image compression */

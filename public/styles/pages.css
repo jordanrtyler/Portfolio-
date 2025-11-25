@@ -9,6 +9,43 @@
     scrollbar-width: none;
 }
 
+/* Homepage-specific: Disable scrolling on ALL elements */
+.hero ~ *,
+.hero ~ section,
+.hero ~ div,
+.services,
+.portfolio,
+.cta,
+.hero-container,
+.hero-content,
+.hero-image,
+.hero-features,
+.hero-actions,
+.services-grid,
+.service-card,
+.side-by-side-galleries,
+.gallery-column,
+.gallery-grid,
+.gallery-item,
+.image-container,
+.gallery-caption,
+.gallery-header,
+.gallery-cta {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+.hero ~ *::-webkit-scrollbar,
+.services *::-webkit-scrollbar,
+.portfolio *::-webkit-scrollbar,
+.cta *::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
 *::-webkit-scrollbar {
     display: none;
     width: 0;
@@ -3764,6 +3801,8 @@ body {
     .nav-item {
         margin: 0 !important;
         flex: 0 0 auto !important;
+        flex-shrink: 0 !important;
+        min-width: 0 !important;
     }
     
     .nav-link {
@@ -3772,6 +3811,8 @@ body {
         display: block !important;
         white-space: nowrap !important;
         border-radius: 8px !important;
+        flex-shrink: 0 !important;
+        margin: 0 !important;
         transition: all 0.3s ease !important;
     }
 
@@ -4037,6 +4078,12 @@ body {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    /* Disable scrolling */
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
     /* Disable scrolling */
     overflow: hidden !important;
     overflow-x: hidden !important;
