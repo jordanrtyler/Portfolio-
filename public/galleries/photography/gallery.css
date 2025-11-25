@@ -43,7 +43,7 @@
 }
 
 .gallery-header h1 {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 700;
     margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -70,13 +70,13 @@
 .stat {
     text-align: center;
     position: relative;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.2rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
-    min-width: 120px;
+    min-width: 85px;
 }
 
 .stat-item:hover,
@@ -88,15 +88,15 @@
 
 .stat-number {
     display: block;
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: clamp(1.5rem, 3vw, 1.9rem);
     font-weight: 700;
     color: #fbbf24;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .stat-label {
-    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+    font-size: clamp(0.7rem, 1.3vw, 0.85rem);
     opacity: 0.9;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -366,57 +366,7 @@
     margin: 0;
 }
 
-/* Footer */
-.gallery-footer {
-    background: var(--background-dark);
-    color: white;
-    padding: 3rem 0 1rem;
-    margin-top: 4rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.footer-section h3,
-.footer-section h4 {
-    margin-bottom: 1rem;
-    color: var(--accent-color);
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.5rem;
-}
-
-.footer-section a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-    color: var(--accent-color);
-}
-
-.social-links a {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
-    color: var(--text-muted);
-}
+/* Footer styles are now handled by main site footer in pages.css */
 
 /* Additional Image Quality Enhancements */
 .gallery-item {
@@ -463,8 +413,12 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .gallery-title {
-        font-size: 2.5rem;
+    .gallery-header {
+        padding: 80px 0 60px;
+    }
+    
+    .gallery-header h1 {
+        font-size: 2rem;
     }
     
     .gallery-stats {
@@ -493,11 +447,15 @@
 }
 
 @media (max-width: 480px) {
-    .gallery-title {
-        font-size: 2rem;
+    .gallery-header {
+        padding: 60px 0 40px;
     }
     
-    .gallery-subtitle {
+    .gallery-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .gallery-header p {
         font-size: 1rem;
     }
     
