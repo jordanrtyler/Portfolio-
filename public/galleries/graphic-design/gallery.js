@@ -52,14 +52,21 @@ function initializeLightbox() {
     const closeBtn = document.querySelector('.close-lightbox');
     
     // Close lightbox when clicking close button
-    closeBtn.addEventListener('click', closeLightbox);
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+    }
     
     // Close lightbox when clicking outside the image
-    lightbox.addEventListener('click', function(e) {
-        if (e.target === lightbox) {
-            closeLightbox();
-        }
-    });
+    if (lightbox) {
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    }
     
     // Close lightbox with Escape key
     document.addEventListener('keydown', function(e) {
@@ -67,16 +74,37 @@ function initializeLightbox() {
             closeLightbox();
         }
     });
+    
+    // Make all gallery images clickable
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    galleryImages.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const galleryItem = this.closest('.gallery-item');
+            const galleryInfo = galleryItem.querySelector('.gallery-info');
+            const title = galleryInfo ? galleryInfo.querySelector('h3')?.textContent : '';
+            const imageSrc = this.src;
+            openLightbox(imageSrc, title);
+        });
+    });
 }
 
 // Open lightbox with image
 function openLightbox(imageSrc, imageTitle) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
-    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxCaption = document.getElementById('lightbox-caption');
     
     lightboxImage.src = imageSrc;
-    lightboxTitle.textContent = imageTitle;
+    lightboxImage.alt = imageTitle;
+    
+    // Set caption if provided
+    if (imageTitle && lightboxCaption) {
+        lightboxCaption.innerHTML = `<h3>${imageTitle}</h3>`;
+    } else if (lightboxCaption) {
+        lightboxCaption.innerHTML = '';
+    }
     
     lightbox.style.display = 'block';
     document.body.style.overflow = 'hidden'; // Prevent scrolling
@@ -92,6 +120,7 @@ function openLightbox(imageSrc, imageTitle) {
 // Close lightbox
 function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
+    if (!lightbox) return;
     
     lightbox.style.opacity = '0';
     setTimeout(() => {
